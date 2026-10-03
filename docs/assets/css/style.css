@@ -789,80 +789,30 @@ button.proj-art {
   min-height: 100%;
 }
 
-.art-diagram {
-  display: grid;
-  place-items: center;
+.art-paper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
   padding: 32px;
   background:
-    radial-gradient(360px 240px at 68% 30%, var(--glow), transparent 70%),
+    radial-gradient(360px 240px at 50% 30%, var(--glow), transparent 70%),
     var(--raised);
 }
 
-.art-diagram svg {
-  width: 100%;
-  max-width: 520px;
+.proj-art.art-paper img {
   height: auto;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
 }
 
-.d-grid path {
-  stroke: var(--line);
-  stroke-width: 1;
-  stroke-dasharray: 3 7;
-  fill: none;
-}
-
-.d-line {
-  fill: none;
-  stroke: var(--signal);
-  stroke-width: 2.5;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-}
-
-.d-hit {
-  fill: var(--amber);
-}
-
-.d-ring {
-  fill: none;
-  stroke: var(--amber);
-  stroke-width: 1.5;
-  opacity: 0.55;
-}
-
-.d-tag {
+.art-paper span {
   font-family: var(--mono);
-  font-size: 13px;
-  font-weight: 700;
-  fill: var(--amber);
-}
-
-.d-nodes rect {
-  fill: var(--surface);
-  stroke: var(--line);
-}
-
-.d-nodes text {
-  font-family: var(--mono);
-  font-size: 12.5px;
-  fill: var(--ink);
-  text-anchor: middle;
-}
-
-.d-nodes .d-alert {
-  fill: var(--amber-soft);
-  stroke: var(--amber);
-}
-
-.d-nodes .d-alert-t {
-  fill: var(--amber);
-  font-weight: 700;
-}
-
-.d-link {
-  stroke: var(--ink-muted);
-  stroke-width: 1.5;
-  fill: none;
+  font-size: 12px;
+  color: var(--ink-muted);
+  text-align: center;
 }
 
 .art-code {
@@ -1588,7 +1538,7 @@ details .brief dd {
     font-size: 26px;
   }
 
-  .art-diagram {
+  .art-paper {
     padding: 18px;
   }
 
