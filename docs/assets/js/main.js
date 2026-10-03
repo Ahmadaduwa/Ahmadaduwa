@@ -6,7 +6,7 @@
   var toggle = document.querySelector(".theme-toggle");
   function setTheme(theme) {
     root.setAttribute("data-theme", theme);
-    toggle.textContent = theme === "dark" ? "theme: dark" : "theme: light";
+    toggle.textContent = theme === "dark" ? "dark" : "light";
     toggle.setAttribute("aria-pressed", String(theme === "light"));
   }
   var saved = null;
@@ -66,7 +66,7 @@
         },
         { threshold: 0.05 }
       );
-      document.querySelectorAll(".case, .report, .toolbox, .explainer, .timeline li, .shot, .contact-grid").forEach(function (el) {
+      document.querySelectorAll(".stats li, .report, .proj, .sowhat, .tool, .year li, .tile, .cta").forEach(function (el) {
         el.classList.add("reveal");
         reveal.observe(el);
       });

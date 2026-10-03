@@ -16,10 +16,10 @@
   {"@context":"https://schema.org","@type":"Person","name":"Ahmad-aduwa Da-oh","alternateName":"Aduwa","url":"https://ahmadaduwa.github.io/Ahmadaduwa/","email":"mailto:adu27747g@gmail.com","alumniOf":"Walailak University","knowsAbout":["Penetration testing","CTF","IoT","Machine learning"],"sameAs":["https://github.com/Ahmadaduwa","https://medium.com/@adu27747g","https://app.hackthebox.com/users/1704621","https://www.facebook.com/amadaduwa.daoh.1"]}
   </script>
   <meta name="theme-color" content="#0b0f0c">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%230b0f0c'/%3E%3Crect x='5' y='3' width='6' height='10' fill='%23fbbf24'/%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' rx='3' fill='%230b0f0c'/%3E%3Crect x='5' y='3' width='6' height='10' fill='%23fbbf24'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
   <script>
     try {
@@ -30,34 +30,36 @@
 <body>
   <header class="nav">
     <div class="wrap">
-      <a class="nav-prompt" href="#top">wa@victus:~$</a>
+      <a class="brand" href="#top">aduwa<span aria-hidden="true"></span></a>
       <nav class="nav-links" aria-label="Sections">
-        <a href="#writeups">./writeups</a>
-        <a href="#projects">./projects</a>
-        <a href="#toolbox">./toolbox</a>
-        <a href="#path">./path</a>
-        <a href="#contact">./contact</a>
+        <a href="#writeups">writeups</a>
+        <a href="#projects">projects</a>
+        <a href="#toolbox">toolbox</a>
+        <a href="#path">path</a>
+        <a href="#contact">contact</a>
       </nav>
-      <button class="theme-toggle" type="button" aria-label="Toggle light theme">theme: dark</button>
+      <button class="theme-toggle" type="button" aria-label="Toggle light theme">dark</button>
     </div>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="wrap hero-grid">
-        <div>
+        <div class="hero-copy">
+          <p class="pill"><span class="dot" aria-hidden="true"></span>Intern @ Armstrong Techs · ก.ย. 2026 – เม.ย. 2027</p>
           <p class="prompt-line"><span class="signal">wa@victus:~$</span> <b data-type>whoami</b></p>
           <h1 class="display">Aduwa<span class="cursor" aria-hidden="true"></span></h1>
-          <p class="tagline">Pentester who can explain.</p>
+          <p class="tagline">Pentester who can <em>explain.</em></p>
           <p class="lede">Ahmad-aduwa Da-oh (Wa) นักศึกษาปีสุดท้าย มหาวิทยาลัยวลัยลักษณ์ — เจาะระบบได้ และอธิบายให้คนที่ไม่ใช่สาย security เข้าใจได้ว่ามันสำคัญยังไง</p>
           <div class="actions">
-            <a class="btn btn-primary" href="#contact">./contact</a>
-            <a class="btn" href="#writeups">view writeups →</a>
-            <a class="btn" href="https://github.com/Ahmadaduwa" rel="noopener">github ↗</a>
+            <a class="btn btn-primary" href="#contact">ติดต่อ →</a>
+            <a class="btn" href="#writeups">ดู writeups</a>
+            <a class="btn btn-ghost" href="https://github.com/Ahmadaduwa" rel="noopener">GitHub ↗</a>
           </div>
         </div>
-        <div class="panel">
-          <div class="panel-bar"><span>about.yml</span><span>read-only</span></div>
+
+        <div class="term" aria-label="about">
+          <div class="term-bar"><span>about.yml</span><span>read-only</span></div>
           <dl class="facts">
             <dt>focus</dt><dd>pentest · CTF</dd>
             <dt>now</dt><dd>intern @ Armstrong Techs</dd>
@@ -66,6 +68,7 @@
             <dt>study</dt><dd>Walailak University</dd>
             <dt>based</dt><dd>Thailand</dd>
           </dl>
+          <p class="term-foot"><span class="signal">wa@victus:~$</span> <span class="cursor cursor-sm" aria-hidden="true"></span></p>
         </div>
       </div>
 
@@ -73,83 +76,81 @@
         <ul class="stats">
           <li><b>01</b><span>IEEE paper<small>ICST 2025 · co-author</small></span></li>
           <li><b>1st</b><span>Mini CTF<small>NCSA CTF Boot Camp 2025</small></span></li>
-          <li><b>03</b><span>pentest write-ups<small>HTB Academy · Medium</small></span></li>
-          <li><b>02</b><span>internships<small>Nightbears · Armstrong Techs</small></span></li>
+          <li><b>03</b><span>Pentest write-ups<small>HTB Academy · Medium</small></span></li>
+          <li><b>02</b><span>Internships<small>Nightbears · Armstrong Techs</small></span></li>
         </ul>
       </div>
     </section>
 
     <section class="section" id="writeups">
       <div class="wrap">
-        <div class="section-head">
-          <span class="num">01 —</span>
-          <h2>writeups</h2>
-          <span class="cmd">ls ~/writeups | wc -l <b>→ 3</b></span>
+        <div class="sec-head">
+          <p class="eyebrow">01 / writeups</p>
+          <h2>เจาะแล้วเขียนเป็นรายงาน</h2>
+          <p>งานใน lab ที่เล่าให้ครบ: ทำอะไรตามลำดับ ใช้เครื่องมืออะไร และช่องโหว่นั้นกระทบอะไร</p>
         </div>
-        <p class="section-intro">งานเจาะระบบใน lab ที่เขียนเป็นรายงาน: ทำอะไรตามลำดับ ใช้เครื่องมืออะไร และช่องโหว่นั้นกระทบอะไร</p>
 
         <div class="reports">
-          <article class="report">
-            <header class="report-head">
-              <span class="report-meta">2026-10-01 · HTB Academy · Windows</span>
-              <span class="sev sev-high">HARD</span>
+          <article class="report sev-high">
+            <header>
+              <span class="badge">Hard</span>
+              <span class="report-meta">2026-10-01 · Windows</span>
             </header>
-            <h3><a href="https://medium.com/@adu27747g/lab-write-up-attacking-common-services-hard-diffuculti-fe506c1847c6" rel="noopener">Attacking Common Services — Hard</a></h3>
+            <h3><a href="https://medium.com/@adu27747g/lab-write-up-attacking-common-services-hard-diffuculti-fe506c1847c6" rel="noopener">Attacking Common Services</a></h3>
             <ol class="chain">
               <li><b>recon</b>Nmap หา service ที่เปิดอยู่</li>
               <li><b>enumerate</b>SMB share + credential spraying</li>
               <li><b>escalate</b>MSSQL linked server → sysadmin</li>
               <li><b>execute</b>xp_cmdshell → NT AUTHORITY\SYSTEM</li>
             </ol>
-            <p class="impact"><b>impact</b>จากโฟลเดอร์แชร์ที่ใครก็เปิดได้ ไปจบที่สิทธิ์สูงสุดของเครื่อง เพราะรหัสผ่านถูกใช้ซ้ำข้าม service และฐานข้อมูลเชื่อมกันโดยให้สิทธิ์เกินจำเป็น</p>
-            <footer class="report-foot">
-              <ul class="tags"><li>Nmap</li><li>smbclient</li><li>Hydra</li><li>MSSQL</li></ul>
-              <a href="https://medium.com/@adu27747g/lab-write-up-attacking-common-services-hard-diffuculti-fe506c1847c6" rel="noopener">read report ↗</a>
+            <p class="impact">จากโฟลเดอร์แชร์ที่ใครก็เปิดได้ ไปจบที่สิทธิ์สูงสุดของเครื่อง เพราะรหัสผ่านถูกใช้ซ้ำและฐานข้อมูลให้สิทธิ์เกินจำเป็น</p>
+            <footer>
+              <ul class="chips"><li>Nmap</li><li>smbclient</li><li>Hydra</li><li>MSSQL</li></ul>
+              <a class="more" href="https://medium.com/@adu27747g/lab-write-up-attacking-common-services-hard-diffuculti-fe506c1847c6" rel="noopener">อ่านรายงาน ↗</a>
             </footer>
           </article>
 
-          <article class="report">
-            <header class="report-head">
-              <span class="report-meta">2026-09-27 · HTB Academy · Linux</span>
-              <span class="sev sev-medium">MEDIUM</span>
+          <article class="report sev-medium">
+            <header>
+              <span class="badge">Medium</span>
+              <span class="report-meta">2026-09-27 · Linux</span>
             </header>
-            <h3><a href="https://medium.com/@adu27747g/lab-write-up-attacking-common-services-medium-difficulty-bed1e3e0b681" rel="noopener">Attacking Common Services — Medium</a></h3>
+            <h3><a href="https://medium.com/@adu27747g/lab-write-up-attacking-common-services-medium-difficulty-bed1e3e0b681" rel="noopener">Attacking Common Services</a></h3>
             <ol class="chain">
               <li><b>recon</b>Nmap ครบทุกพอร์ต</li>
               <li><b>enumerate</b>ไล่ดู service ทีละตัว</li>
               <li><b>exploit</b>brute force ด้วย password list ที่เจอในระบบ</li>
               <li><b>loot</b>เข้า FTP อ่าน flag</li>
             </ol>
-            <p class="impact"><b>impact</b>ผู้ใช้คนเดียวใช้รหัสเดียวกับ 3 service (FTP 2 พอร์ต และ POP3) หลุดที่เดียวจึงหลุดทั้งหมด — และถ้าสแกนแค่ 1,000 พอร์ตแรกจะมองไม่เห็น service ที่ซ่อนอยู่เลย</p>
-            <footer class="report-foot">
-              <ul class="tags"><li>Nmap</li><li>FTP</li><li>POP3</li><li>Brute force</li></ul>
-              <a href="https://medium.com/@adu27747g/lab-write-up-attacking-common-services-medium-difficulty-bed1e3e0b681" rel="noopener">read report ↗</a>
+            <p class="impact">ผู้ใช้คนเดียวใช้รหัสเดียวกับ 3 service หลุดที่เดียวจึงหลุดทั้งหมด — และถ้าสแกนแค่ 1,000 พอร์ตแรกจะมองไม่เห็น service ที่ซ่อนอยู่เลย</p>
+            <footer>
+              <ul class="chips"><li>Nmap</li><li>FTP</li><li>POP3</li><li>Brute force</li></ul>
+              <a class="more" href="https://medium.com/@adu27747g/lab-write-up-attacking-common-services-medium-difficulty-bed1e3e0b681" rel="noopener">อ่านรายงาน ↗</a>
             </footer>
           </article>
 
-          <article class="report">
-            <header class="report-head">
-              <span class="report-meta">2026-09-26 · HTB Academy · ภาษาไทย</span>
-              <span class="sev sev-low">EASY</span>
+          <article class="report sev-low">
+            <header>
+              <span class="badge">Easy</span>
+              <span class="report-meta">2026-09-26 · ภาษาไทย</span>
             </header>
-            <h3><a href="https://medium.com/@adu27747g/attacking-common-services-easy-htb-2de9e039f353" rel="noopener">Attacking Common Services — Easy</a></h3>
+            <h3><a href="https://medium.com/@adu27747g/attacking-common-services-easy-htb-2de9e039f353" rel="noopener">Attacking Common Services</a></h3>
             <ol class="chain">
               <li><b>recon</b>Nmap</li>
               <li><b>enumerate</b>หารายชื่อ user</li>
               <li><b>exploit</b>brute force รหัสผ่าน → FTP</li>
               <li><b>pivot</b>MariaDB เขียน web shell</li>
-              <li><b>loot</b>อ่าน flag</li>
             </ol>
-            <p class="impact"><b>impact</b>ฐานข้อมูลที่เขียนไฟล์ลงโฟลเดอร์ของเว็บได้ เท่ากับสั่งรันคำสั่งบนเครื่องได้ — รหัสผ่านอ่อนตัวเดียวจึงกลายเป็นการยึดเว็บทั้งตัว</p>
-            <footer class="report-foot">
-              <ul class="tags"><li>Nmap</li><li>FTP</li><li>MariaDB</li><li>Web shell</li></ul>
-              <a href="https://medium.com/@adu27747g/attacking-common-services-easy-htb-2de9e039f353" rel="noopener">read report ↗</a>
+            <p class="impact">ฐานข้อมูลที่เขียนไฟล์ลงโฟลเดอร์ของเว็บได้ เท่ากับสั่งรันคำสั่งบนเครื่องได้ — รหัสผ่านอ่อนตัวเดียวจึงกลายเป็นการยึดเว็บทั้งตัว</p>
+            <footer>
+              <ul class="chips"><li>Nmap</li><li>FTP</li><li>MariaDB</li><li>Web shell</li></ul>
+              <a class="more" href="https://medium.com/@adu27747g/attacking-common-services-easy-htb-2de9e039f353" rel="noopener">อ่านรายงาน ↗</a>
             </footer>
           </article>
         </div>
 
-        <aside class="explainer">
-          <div class="explainer-head">&gt;&gt; SO WHAT</div>
+        <aside class="sowhat">
+          <span>&gt;&gt; so what</span>
           <p>ทั้งสาม lab ไม่มีช่องโหว่ล้ำ ๆ เลย — มีแค่รหัสผ่านที่ใช้ซ้ำ ไฟล์ที่ลืมลบ และสิทธิ์ที่ให้เกิน ซึ่งเป็นสิ่งที่องค์กรจริงแก้ได้โดยไม่ต้องซื้ออะไรเพิ่ม</p>
         </aside>
       </div>
@@ -157,120 +158,150 @@
 
     <section class="section" id="projects">
       <div class="wrap">
-        <div class="section-head">
-          <span class="num">02 —</span>
-          <h2>projects</h2>
-          <span class="cmd">ls ~/projects | wc -l <b>→ 4</b></span>
+        <div class="sec-head">
+          <p class="eyebrow">02 / projects</p>
+          <h2>ระบบที่สร้างเองกับมือ</h2>
+          <p>ตั้งแต่เซ็นเซอร์ถึง dashboard แต่ละงานบอกว่าปัญหาคืออะไร ผมทำส่วนไหน และได้ผลอะไร</p>
         </div>
-        <p class="section-intro">ระบบที่สร้างเองตั้งแต่เซ็นเซอร์ถึง dashboard แต่ละงานเขียนเป็น ปัญหา → วิธีทำ → ผลลัพธ์</p>
 
-        <div class="cases">
-          <article class="case">
-            <header class="case-head">
-              <div class="case-meta"><span>~/projects/landslide</span><span class="status">published · IEEE ICST 2025</span></div>
+        <div class="bento">
+          <article class="proj proj-feature">
+            <div class="proj-art art-diagram" aria-hidden="true">
+              <svg viewBox="0 44 520 240" role="presentation">
+                <g class="d-grid"><path d="M0 60H520M0 120H520M0 180H520M0 240H520"/></g>
+                <path class="d-line" d="M20 196 L60 190 L100 198 L140 186 L180 192 L220 180 L260 188 L300 172 L330 150 L352 84 L372 132 L400 168 L440 176 L480 170 L500 174"/>
+                <circle class="d-hit" cx="352" cy="84" r="7"/>
+                <circle class="d-ring" cx="352" cy="84" r="16"/>
+                <text class="d-tag" x="374" y="78">anomaly</text>
+                <g class="d-nodes">
+                  <rect x="20" y="236" width="92" height="34" rx="8"/><text x="66" y="258">sensor</text>
+                  <rect x="150" y="236" width="92" height="34" rx="8"/><text x="196" y="258">LoRaWAN</text>
+                  <rect x="280" y="236" width="92" height="34" rx="8"/><text x="326" y="258">model</text>
+                  <rect class="d-alert" x="410" y="236" width="92" height="34" rx="8"/><text class="d-alert-t" x="456" y="258">alert</text>
+                </g>
+                <path class="d-link" d="M112 253H150M242 253H280M372 253H410"/>
+              </svg>
+            </div>
+            <div class="proj-body">
+              <p class="proj-status">Published · IEEE ICST 2025</p>
               <h3>Landslide Early Warning System</h3>
+              <p class="proj-sum">ระบบเตือนภัยดินถล่มต้นทุนต่ำที่ยังทำงานได้แม้อินเทอร์เน็ตล่มและไฟดับช่วงมรสุม</p>
               <dl class="metrics">
                 <div><dt>F1-score</dt><dd>0.73</dd></div>
                 <div><dt>sensor types</dt><dd>5</dd></div>
                 <div><dt>venue</dt><dd>IEEE</dd></div>
               </dl>
-            </header>
-            <button class="case-shot" type="button" data-full="assets/img/paper/ieee-icst-2025.png" data-alt="หน้า IEEE Xplore ของ paper A LoRaWAN-based Landslide Early Warning System using Unsupervised AI">
-              <img src="assets/img/paper/ieee-icst-2025.png" alt="หน้า IEEE Xplore ของ paper A LoRaWAN-based Landslide Early Warning System using Unsupervised AI" loading="lazy" width="1373" height="777">
-            </button>
-            <div class="case-body">
+              <p class="role"><b>บทบาท</b>ผู้เขียนร่วม — เขียนโมเดล AI ตรวจจับความผิดปกติ</p>
               <dl class="brief">
-                <dt>problem</dt><dd>พื้นที่เสี่ยงดินถล่มอยู่ห่างไกล ช่วงมรสุมอินเทอร์เน็ตล่มและไฟดับ และไม่มีข้อมูลเหตุการณ์จริงมากพอจะสอนโมเดลแบบมีป้ายกำกับ</dd>
-                <dt>approach</dt><dd>โหนดเซ็นเซอร์พลังงานแสงอาทิตย์ส่งข้อมูลผ่าน LoRaWAN มี SD card สำรอง แล้วใช้ Isolation Forest ซึ่งไม่ต้องใช้ป้ายกำกับจับความผิดปกติ</dd>
-                <dt>role</dt><dd>ผู้เขียนร่วม — เขียนโมเดล AI ตรวจจับความผิดปกติ</dd>
-                <dt class="signal">result</dt><dd>จับเหตุการณ์วิกฤตได้ F1 0.73 ตีพิมพ์ใน IEEE ICST 2025 และใช้กับพื้นที่ อ.สิชล จ.นครศรีธรรมราช</dd>
+                <dt>ปัญหา</dt><dd>พื้นที่เสี่ยงอยู่ห่างไกล และไม่มีข้อมูลเหตุการณ์จริงมากพอจะสอนโมเดลแบบมีป้ายกำกับ</dd>
+                <dt>วิธีทำ</dt><dd>โหนดเซ็นเซอร์พลังงานแสงอาทิตย์ส่งข้อมูลผ่าน LoRaWAN มี SD card สำรอง แล้วใช้ Isolation Forest ซึ่งไม่ต้องใช้ป้ายกำกับ</dd>
+                <dt>ผลลัพธ์</dt><dd>จับเหตุการณ์วิกฤตได้ F1 0.73 ตีพิมพ์ใน IEEE ICST 2025 และใช้กับพื้นที่ อ.สิชล จ.นครศรีธรรมราช</dd>
               </dl>
-              <p class="pipeline">sensor node <i>→</i> LoRaWAN <i>→</i> cloud <i>→</i> Isolation Forest <i>→</i> alert</p>
-              <ul class="tags"><li>LoRaWAN</li><li>Isolation Forest</li><li>LSTM</li><li>Python</li></ul>
-              <p class="case-links"><a href="https://ieeexplore.ieee.org/document/11512451" rel="noopener">paper ↗</a><a href="https://github.com/Ahmadaduwa/Landslide" rel="noopener">code ↗</a><a href="https://www.wu.ac.th/th/news/26262/" rel="noopener">news ↗</a></p>
+              <ul class="chips"><li>LoRaWAN</li><li>Isolation Forest</li><li>LSTM</li><li>Python</li></ul>
+              <p class="proj-links">
+                <a href="https://ieeexplore.ieee.org/document/11512451" rel="noopener">Paper ↗</a>
+                <a href="https://github.com/Ahmadaduwa/Landslide" rel="noopener">Code ↗</a>
+                <a href="https://www.wu.ac.th/th/news/26262/" rel="noopener">ข่าว ↗</a>
+                <button type="button" data-full="assets/img/paper/ieee-icst-2025.png" data-alt="หน้า IEEE Xplore ของ paper A LoRaWAN-based Landslide Early Warning System using Unsupervised AI">หน้า IEEE</button>
+              </p>
             </div>
           </article>
 
-          <article class="case">
-            <header class="case-head">
-              <div class="case-meta"><span>~/projects/tesa2025</span><span class="status">TESA Top Gun Rally 2025</span></div>
+          <article class="proj">
+            <button class="proj-art" type="button" data-full="assets/img/projects/drone-detection.jpg" data-alt="ผลตรวจจับโดรนจากกล้อง มีกรอบสีเขียวรอบโดรนพร้อมค่าความสูงที่ทำนายได้">
+              <img src="assets/img/thumbs/projects/drone-detection.jpg" alt="ผลตรวจจับโดรนจากกล้อง มีกรอบสีเขียวรอบโดรนพร้อมค่าความสูง" loading="lazy" width="760" height="428">
+            </button>
+            <div class="proj-body">
+              <p class="proj-status">TESA Top Gun Rally 2025</p>
               <h3>Drone Detection &amp; Tracking</h3>
+              <p class="proj-sum">หาโดรนจากภาพกล้องแบบ real-time แล้วบอกพิกัดกับความสูงบน dashboard แผนที่</p>
               <dl class="metrics">
                 <div><dt>modules</dt><dd>5</dd></div>
                 <div><dt>team</dt><dd>5</dd></div>
                 <div><dt>days</dt><dd>6</dd></div>
               </dl>
-            </header>
-            <button class="case-shot" type="button" data-full="assets/img/projects/drone-detection.jpg" data-alt="ผลตรวจจับโดรนจากกล้อง มีกรอบสีเขียวรอบโดรนพร้อมค่าความสูงที่ทำนายได้">
-              <img src="assets/img/thumbs/projects/drone-detection.jpg" alt="ผลตรวจจับโดรนจากกล้อง มีกรอบสีเขียวรอบโดรนพร้อมค่าความสูงที่ทำนายได้" loading="lazy" width="1600" height="900">
-            </button>
-            <div class="case-body">
-              <dl class="brief">
-                <dt>problem</dt><dd>โจทย์ “Defense Innovations”: ต้องรู้ว่าโดรนอยู่ตรงไหนและสูงเท่าไรจากภาพกล้อง แบบ real-time</dd>
-                <dt>approach</dt><dd>YOLO หาโดรนในภาพ, ByteTrack ติดตาม, EfficientNet-B0 ทำนาย lat / lon / alt แล้วส่งผ่าน WebSocket ขึ้น dashboard แผนที่</dd>
-                <dt>role</dt><dd>หัวหน้าทีม — คุมทีม 5 คน และรับผิดชอบงาน AI</dd>
-                <dt class="signal">result</dt><dd>ได้ระบบที่ต่อกันครบ 5 ส่วน: AI pipeline, backend API, dashboard, MATLAB simulation และ MQTT bridge</dd>
-              </dl>
-              <p class="pipeline">camera <i>→</i> YOLO <i>→</i> ByteTrack <i>→</i> lat / lon / alt <i>→</i> dashboard</p>
-              <ul class="tags"><li>YOLO</li><li>ByteTrack</li><li>EfficientNet-B0</li><li>PostgreSQL</li><li>MQTT</li><li>MATLAB</li></ul>
-              <p class="case-links"><a href="https://github.com/Ahmadaduwa/tesa2025" rel="noopener">code ↗</a><button class="link-btn" type="button" data-full="assets/img/events/tesa-top-gun-rally-2025.jpg" data-alt="ทีม COE-AI มหาวิทยาลัยวลัยลักษณ์ ในงาน TESA Top Gun Rally 2025">team photo</button></p>
+              <p class="role"><b>บทบาท</b>หัวหน้าทีม — คุมทีม 5 คน และรับผิดชอบงาน AI</p>
+              <details>
+                <summary>รายละเอียด</summary>
+                <dl class="brief">
+                  <dt>ปัญหา</dt><dd>โจทย์ “Defense Innovations”: ต้องรู้ว่าโดรนอยู่ตรงไหนและสูงเท่าไรจากภาพกล้อง</dd>
+                  <dt>วิธีทำ</dt><dd>YOLO หาโดรน, ByteTrack ติดตาม, EfficientNet-B0 ทำนาย lat / lon / alt แล้วส่งผ่าน WebSocket ขึ้น dashboard</dd>
+                  <dt>ผลลัพธ์</dt><dd>ได้ระบบที่ต่อกันครบ 5 ส่วน: AI pipeline, backend API, dashboard, MATLAB simulation และ MQTT bridge</dd>
+                </dl>
+              </details>
+              <ul class="chips"><li>YOLO</li><li>ByteTrack</li><li>EfficientNet-B0</li><li>MQTT</li></ul>
+              <p class="proj-links">
+                <a href="https://github.com/Ahmadaduwa/tesa2025" rel="noopener">Code ↗</a>
+                <button type="button" data-full="assets/img/events/tesa-top-gun-rally-2025.jpg" data-alt="ทีม COE-AI มหาวิทยาลัยวลัยลักษณ์ ในงาน TESA Top Gun Rally 2025">รูปทีม</button>
+              </p>
             </div>
           </article>
 
-          <article class="case">
-            <header class="case-head">
-              <div class="case-meta"><span>~/projects/durian</span><span class="status">AI · mobile</span></div>
+          <article class="proj">
+            <button class="proj-art" type="button" data-full="assets/img/projects/durian-leaves.jpg" data-alt="ตัวอย่างภาพใบทุเรียนจากชุดข้อมูล 4 ใบ">
+              <img src="assets/img/thumbs/projects/durian-leaves.jpg" alt="ตัวอย่างภาพใบทุเรียนจากชุดข้อมูล" loading="lazy" width="760" height="760">
+            </button>
+            <div class="proj-body">
+              <p class="proj-status">AI · Mobile app</p>
               <h3>Durian Leaf Disease AI</h3>
+              <p class="proj-sum">ถ่ายรูปใบทุเรียนแล้วบอกโรค พร้อมแสดงว่าโมเดลดูตรงไหนของใบ</p>
               <dl class="metrics">
                 <div><dt>accuracy</dt><dd>97.7%</dd></div>
                 <div><dt>test images</dt><dd>612</dd></div>
                 <div><dt>classes</dt><dd>5</dd></div>
               </dl>
-            </header>
-            <button class="case-shot" type="button" data-full="assets/img/projects/durian-leaves.jpg" data-alt="ตัวอย่างภาพใบทุเรียนจากชุดข้อมูล 4 ใบ">
-              <img src="assets/img/thumbs/projects/durian-leaves.jpg" alt="ตัวอย่างภาพใบทุเรียนจากชุดข้อมูล 4 ใบ" loading="lazy" width="808" height="808">
-            </button>
-            <div class="case-body">
-              <dl class="brief">
-                <dt>problem</dt><dd>โรคใบทุเรียนหลายชนิดดูคล้ายกันจนแยกด้วยตาได้ยาก</dd>
-                <dt>approach</dt><dd>transfer learning เทียบ 5 สถาปัตยกรรม รวมผลแบบ ensemble และใช้ Grad-CAM ให้เห็นว่าโมเดลดูตรงไหนของใบ</dd>
-                <dt>role</dt><dd>ทำทั้งระบบคนเดียว ตั้งแต่โมเดลจนถึงแอป</dd>
-                <dt class="signal">result</dt><dd>แม่นยำ 97.7% บนภาพทดสอบ 612 ภาพ และต่อยอดเป็นแอป RooJai Durian สำหรับชาวสวน</dd>
-              </dl>
-              <p class="pipeline">leaf photo <i>→</i> 5 CNNs <i>→</i> ensemble <i>→</i> disease + Grad-CAM</p>
-              <ul class="tags"><li>PyTorch</li><li>Transfer Learning</li><li>Grad-CAM</li><li>Flutter</li></ul>
-              <p class="case-links"><a href="https://github.com/Ahmadaduwa/durianLeafDisease" rel="noopener">model ↗</a><a href="https://github.com/Ahmadaduwa/flutter_durian" rel="noopener">app ↗</a></p>
+              <p class="role"><b>บทบาท</b>ทำทั้งระบบคนเดียว ตั้งแต่โมเดลจนถึงแอป</p>
+              <details>
+                <summary>รายละเอียด</summary>
+                <dl class="brief">
+                  <dt>ปัญหา</dt><dd>โรคใบทุเรียนหลายชนิดดูคล้ายกันจนแยกด้วยตาได้ยาก</dd>
+                  <dt>วิธีทำ</dt><dd>transfer learning เทียบ 5 สถาปัตยกรรม รวมผลแบบ ensemble และใช้ Grad-CAM อธิบายผล</dd>
+                  <dt>ผลลัพธ์</dt><dd>แม่นยำ 97.7% บนภาพทดสอบ 612 ภาพ และต่อยอดเป็นแอป RooJai Durian สำหรับชาวสวน</dd>
+                </dl>
+              </details>
+              <ul class="chips"><li>PyTorch</li><li>Transfer Learning</li><li>Grad-CAM</li><li>Flutter</li></ul>
+              <p class="proj-links">
+                <a href="https://github.com/Ahmadaduwa/durianLeafDisease" rel="noopener">Model ↗</a>
+                <a href="https://github.com/Ahmadaduwa/flutter_durian" rel="noopener">App ↗</a>
+              </p>
             </div>
           </article>
 
-          <article class="case">
-            <header class="case-head">
-              <div class="case-meta"><span>~/projects/tesa2024</span><span class="status">TESA Top Gun Rally 2024</span></div>
-              <h3>Real-time Audio Signal IoT</h3>
-            </header>
-            <div class="case-shot case-tree" aria-hidden="true">
-<pre>sound_app.c
-├─ alsa_thr.c    capture @ 48 kHz
-├─ fft_thr.c     FFT + KNN classify
-├─ db_helper.c   SQLite storage
-└─ iot_app.c     MQTT publish</pre>
+          <article class="proj">
+            <div class="proj-art art-code" aria-hidden="true">
+<pre><span>sound_app.c</span>
+├─ alsa_thr.c   <i>capture 48 kHz</i>
+├─ fft_thr.c    <i>FFT + KNN</i>
+├─ db_helper.c  <i>SQLite</i>
+└─ iot_app.c    <i>MQTT</i></pre>
             </div>
-            <div class="case-body">
-              <dl class="brief">
-                <dt>problem</dt><dd>จำแนกสัญญาณเสียงแบบ real-time บนอุปกรณ์ embedded แล้วรายงานผลผ่านเครือข่าย</dd>
-                <dt>approach</dt><dd>โปรแกรม C แบบ multi-thread แยกงานจับเสียง, FFT + KNN และ MQTT ออกจากกันด้วย pthreads</dd>
-                <dt>role</dt><dd>ฝ่าย embedded — เขียนโค้ดทั้งหมดใน repo นี้</dd>
-                <dt class="signal">result</dt><dd>ระบบทำงานครบวงจรตั้งแต่ไมโครโฟนถึง MQTT พร้อมเก็บผลลง SQLite</dd>
+            <div class="proj-body">
+              <p class="proj-status">TESA Top Gun Rally 2024</p>
+              <h3>Real-time Audio Signal IoT</h3>
+              <p class="proj-sum">ฟังเสียง แยกประเภทสัญญาณ แล้วรายงานผลผ่านเครือข่าย ทั้งหมดบนอุปกรณ์ embedded</p>
+              <dl class="metrics">
+                <div><dt>sampling</dt><dd>48 kHz</dd></div>
+                <div><dt>threads</dt><dd>3</dd></div>
               </dl>
-              <p class="pipeline">microphone <i>→</i> ALSA <i>→</i> FFT <i>→</i> KNN <i>→</i> SQLite + MQTT</p>
-              <ul class="tags"><li>C</li><li>pthreads</li><li>ALSA</li><li>FFT</li><li>MQTT</li></ul>
-              <p class="case-links"><a href="https://github.com/Ahmadaduwa/PROJECT_TESA_2024" rel="noopener">code ↗</a></p>
+              <p class="role"><b>บทบาท</b>ฝ่าย embedded — เขียนโค้ดทั้งหมดใน repo นี้</p>
+              <details>
+                <summary>รายละเอียด</summary>
+                <dl class="brief">
+                  <dt>ปัญหา</dt><dd>จำแนกสัญญาณเสียงแบบ real-time บนอุปกรณ์ embedded แล้วรายงานผลผ่านเครือข่าย</dd>
+                  <dt>วิธีทำ</dt><dd>โปรแกรม C แบบ multi-thread แยกงานจับเสียง, FFT + KNN และ MQTT ออกจากกันด้วย pthreads</dd>
+                  <dt>ผลลัพธ์</dt><dd>ระบบทำงานครบวงจรตั้งแต่ไมโครโฟนถึง MQTT พร้อมเก็บผลลง SQLite</dd>
+                </dl>
+              </details>
+              <ul class="chips"><li>C</li><li>pthreads</li><li>ALSA</li><li>FFT</li><li>MQTT</li></ul>
+              <p class="proj-links">
+                <a href="https://github.com/Ahmadaduwa/PROJECT_TESA_2024" rel="noopener">Code ↗</a>
+              </p>
             </div>
           </article>
         </div>
 
-        <aside class="explainer">
-          <div class="explainer-head">&gt;&gt; SO WHAT</div>
+        <aside class="sowhat">
+          <span>&gt;&gt; so what</span>
           <p>ทำไมคนอยากเป็น pentester ถึงมีโปรเจกต์ IoT กับ AI เต็มไปหมด — เพราะคนที่เคยสร้างระบบเองตั้งแต่เซ็นเซอร์จนถึง API จะรู้ว่ามันมักพังตรงไหน และอธิบายให้ทีมที่สร้างฟังได้ว่าต้องแก้อะไร</p>
         </aside>
       </div>
@@ -278,197 +309,172 @@
 
     <section class="section" id="toolbox">
       <div class="wrap">
-        <div class="section-head">
-          <span class="num">03 —</span>
-          <h2>toolbox</h2>
-          <span class="cmd">cat ~/toolbox</span>
+        <div class="sec-head">
+          <p class="eyebrow">03 / toolbox</p>
+          <h2>เครื่องมือที่ใช้จริง</h2>
+          <p>ทุกชื่อในนี้มีงานข้างบนรองรับ</p>
         </div>
-        <dl class="toolbox">
-          <div><dt>offensive</dt><dd><ul class="tags"><li>Nmap</li><li>Hydra</li><li>smbclient</li><li>MSSQL / xp_cmdshell</li><li>FTP · POP3 · SMB</li><li>Web shell</li><li>Kali Linux</li></ul></dd></div>
-          <div><dt>code</dt><dd><ul class="tags"><li>Python</li><li>C</li><li>JavaScript / TypeScript</li><li>Dart</li><li>Bash</li></ul></dd></div>
-          <div><dt>backend</dt><dd><ul class="tags"><li>Node.js</li><li>FastAPI</li><li>PostgreSQL</li><li>SQLite</li><li>Docker</li></ul></dd></div>
-          <div><dt>ai / data</dt><dd><ul class="tags"><li>PyTorch</li><li>scikit-learn</li><li>YOLO</li><li>Isolation Forest</li><li>Grad-CAM</li></ul></dd></div>
-          <div><dt>iot</dt><dd><ul class="tags"><li>LoRaWAN</li><li>MQTT</li><li>ALSA</li><li>MATLAB</li></ul></dd></div>
-        </dl>
+        <div class="tools">
+          <div class="tool tool-hot"><h3>Offensive</h3><ul class="chips"><li>Nmap</li><li>Hydra</li><li>smbclient</li><li>MSSQL / xp_cmdshell</li><li>FTP · POP3 · SMB</li><li>Web shell</li><li>Kali Linux</li></ul></div>
+          <div class="tool"><h3>Code</h3><ul class="chips"><li>Python</li><li>C</li><li>JavaScript / TypeScript</li><li>Dart</li><li>Bash</li></ul></div>
+          <div class="tool"><h3>Backend</h3><ul class="chips"><li>Node.js</li><li>FastAPI</li><li>PostgreSQL</li><li>SQLite</li><li>Docker</li></ul></div>
+          <div class="tool"><h3>AI / Data</h3><ul class="chips"><li>PyTorch</li><li>scikit-learn</li><li>YOLO</li><li>Isolation Forest</li><li>Grad-CAM</li></ul></div>
+          <div class="tool"><h3>IoT</h3><ul class="chips"><li>LoRaWAN</li><li>MQTT</li><li>ALSA</li><li>MATLAB</li></ul></div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="path">
       <div class="wrap">
-        <div class="section-head">
-          <span class="num">04 —</span>
-          <h2>path</h2>
-          <span class="cmd">git log --oneline ~/path</span>
+        <div class="sec-head">
+          <p class="eyebrow">04 / path</p>
+          <h2>เส้นทางที่ผ่านมา</h2>
+          <p>ทุกบรรทัดกดดูหลักฐานได้</p>
         </div>
 
-        <ol class="timeline">
-          <li class="year"><span>2026</span></li>
-          <li class="now">
-            <time>2026-09 → 2027-04</time>
-            <div><strong>Intern (Cooperative Education) — <a href="https://www.armstrongtechs.com/" rel="noopener">Armstrong Techs</a></strong><p>สหกิจศึกษา 14 ก.ย. 2026 – 9 เม.ย. 2027</p></div>
-          </li>
-          <li>
-            <time>2026-06</time>
-            <div><strong>NCSA x CISCO CTF 2026</strong><p>NCSA CTF Thailand Tournament ในนามทีม MaiMeName67 · <button class="link-btn" type="button" data-full="assets/img/certs/ncsa-cisco-ctf-2026.jpg" data-alt="เกียรติบัตร NCSA x CISCO CTF 2026">cert</button></p></div>
-          </li>
-          <li>
-            <time>2026-03 → 2026-04</time>
-            <div><strong>Cross-cultural Exchange — Ningbo, China</strong><p>Student Training Program ที่ Ningbo City College of Vocational Technology · <button class="link-btn" type="button" data-full="assets/img/certs/ningbo-exchange-2026.jpg" data-alt="Certificate of Completion จาก Ningbo City College of Vocational Technology">cert</button></p></div>
-          </li>
-          <li class="year"><span>2025</span></li>
-          <li>
-            <time>2025-12</time>
-            <div><strong>IEEE paper — ICST 2025</strong><p>ผู้เขียนร่วม “A LoRaWAN-based Landslide Early Warning System using Unsupervised AI” · <a href="https://doi.org/10.1109/ICST66402.2025.11512451" rel="noopener">DOI</a></p></div>
-          </li>
-          <li>
-            <time>2025-12</time>
-            <div><strong>Road To Cybersecurity 2025 GEN6 — SOSECURE</strong><p>จบหลักสูตร · <button class="link-btn" type="button" data-full="assets/img/certs/sosecure-road-to-cybersecurity-gen6.jpg" data-alt="Certificate หลักสูตร Road To Cybersecurity 2025 GEN6 จาก SOSECURE">cert</button></p></div>
-          </li>
-          <li>
-            <time>2025-11</time>
-            <div><strong>TESA Top Gun Rally 2025</strong><p>หัวข้อ “Defense Innovations” ที่โรงเรียนนายร้อยพระจุลจอมเกล้า · <button class="link-btn" type="button" data-full="assets/img/certs/tesa-top-gun-rally-2025.jpg" data-alt="เกียรติบัตร TESA Top Gun Rally 2025">cert</button></p></div>
-          </li>
-          <li class="win">
-            <time>2025-07</time>
-            <div><strong>ชนะเลิศ Mini CTF — NCSA CTF Boot Camp</strong><p>ทีม “กองกำลังแฮกเกอร์” ที่หาดใหญ่ จัดโดย สกมช. · <button class="link-btn" type="button" data-full="assets/img/certs/mini-ctf-winner-2025.jpg" data-alt="ประกาศนียบัตรรางวัลชนะเลิศ Mini CTF จาก สกมช.">cert</button></p></div>
-          </li>
-          <li>
-            <time>2025-05</time>
-            <div><strong>Basic Cybersecurity — NCSA MOOC</strong><p>จบหลักสูตร · <button class="link-btn" type="button" data-full="assets/img/certs/ncsa-basic-cybersecurity.jpg" data-alt="Certificate of Completion หลักสูตร Basic Cybersecurity จาก NCSA MOOC">cert</button></p></div>
-          </li>
-          <li>
-            <time>2025-04 → 2025-06</time>
-            <div><strong>Backend Developer Intern — Nightbears Technology</strong><p>ฝึกงาน 2 เดือน · <button class="link-btn" type="button" data-full="assets/img/certs/nightbears-internship.jpg" data-alt="Certificate of Internship จาก Nightbears Technology">cert</button></p></div>
-          </li>
-          <li>
-            <time>2025-03</time>
-            <div><strong>Super AI Engineer Season 5</strong><p>ผ่านระดับ Foundation AI (Theory) · <button class="link-btn" type="button" data-full="assets/img/certs/super-ai-engineer-ss5.jpg" data-alt="Certificate Super AI Engineer Season 5 ระดับ Foundation AI">cert</button></p></div>
-          </li>
-          <li class="year"><span>2024</span></li>
-          <li>
-            <time>2024-11</time>
-            <div><strong>TESA Top Gun Rally 2024</strong><p>มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา · <button class="link-btn" type="button" data-full="assets/img/certs/tesa-top-gun-rally-2024.jpg" data-alt="Certificate of Attendance TESA Top Gun Rally 2024">cert</button></p></div>
-          </li>
-          <li>
-            <time>2024-05</time>
-            <div><strong>ค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31</strong><p>ภาคปฏิบัติที่ภูเก็ต · <a href="https://cas.wu.ac.th/archives/27200" rel="noopener">ข่าว</a> · <button class="link-btn" type="button" data-full="assets/img/certs/marine-ecology-31.jpg" data-alt="วุฒิบัตรโครงการค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31">cert</button></p></div>
-          </li>
-        </ol>
+        <div class="years">
+          <div class="year">
+            <h3>2026</h3>
+            <ul>
+              <li class="hot">
+                <time>ก.ย. 2026 – เม.ย. 2027</time>
+                <div><strong>Intern (Cooperative Education) · <a href="https://www.armstrongtechs.com/" rel="noopener">Armstrong Techs</a></strong><p>สหกิจศึกษา — กำลังทำอยู่</p></div>
+              </li>
+              <li>
+                <time>มิ.ย.</time>
+                <div><strong>NCSA x CISCO CTF 2026</strong><p>NCSA CTF Thailand Tournament ในนามทีม MaiMeName67 <button type="button" data-full="assets/img/certs/ncsa-cisco-ctf-2026.jpg" data-alt="เกียรติบัตร NCSA x CISCO CTF 2026">cert</button></p></div>
+              </li>
+              <li>
+                <time>มี.ค. – เม.ย.</time>
+                <div><strong>Cross-cultural Exchange · Ningbo, China</strong><p>Student Training Program ที่ Ningbo City College of Vocational Technology <button type="button" data-full="assets/img/certs/ningbo-exchange-2026.jpg" data-alt="Certificate of Completion จาก Ningbo City College of Vocational Technology">cert</button></p></div>
+              </li>
+            </ul>
+          </div>
 
-        <h3 class="label">field photos</h3>
-        <div class="photos">
-          <figure class="shot">
-            <button type="button" data-full="assets/img/events/ctf-2025.jpg" data-alt="ห้องแข่งขัน CTF ปี 2025">
-              <img src="assets/img/thumbs/events/ctf-2025.jpg" alt="ห้องแข่งขัน CTF ปี 2025 ผู้เข้าแข่งขันนั่งทำโจทย์หน้าแล็ปท็อป" loading="lazy" width="1600" height="1066">
-            </button>
-            <figcaption><b>CTF</b>2025</figcaption>
-          </figure>
-          <figure class="shot">
-            <button type="button" data-full="assets/img/events/tesa-top-gun-rally-2025.jpg" data-alt="ทีม COE-AI มหาวิทยาลัยวลัยลักษณ์ ในงาน TESA Top Gun Rally 2025">
-              <img src="assets/img/thumbs/events/tesa-top-gun-rally-2025.jpg" alt="ทีม COE-AI มหาวิทยาลัยวลัยลักษณ์ รับเกียรติบัตร TESA Top Gun Rally 2025" loading="lazy" width="1600" height="900">
-            </button>
-            <figcaption><b>TESA Top Gun Rally</b>2025</figcaption>
-          </figure>
-          <figure class="shot">
-            <button type="button" data-full="assets/img/events/marine-ecology-2024.jpg" data-alt="กิจกรรมค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31">
-              <img src="assets/img/thumbs/events/marine-ecology-2024.jpg" alt="ภาพรวมกิจกรรมค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31" loading="lazy" width="1536" height="1024">
-            </button>
-            <figcaption><b>Marine Ecology Course</b>2024</figcaption>
-          </figure>
+          <div class="year">
+            <h3>2025</h3>
+            <ul>
+              <li>
+                <time>ธ.ค.</time>
+                <div><strong>IEEE paper · ICST 2025</strong><p>ผู้เขียนร่วม “A LoRaWAN-based Landslide Early Warning System using Unsupervised AI” <a href="https://doi.org/10.1109/ICST66402.2025.11512451" rel="noopener">DOI</a></p></div>
+              </li>
+              <li>
+                <time>ธ.ค.</time>
+                <div><strong>Road To Cybersecurity 2025 GEN6 · SOSECURE</strong><p>จบหลักสูตร <button type="button" data-full="assets/img/certs/sosecure-road-to-cybersecurity-gen6.jpg" data-alt="Certificate หลักสูตร Road To Cybersecurity 2025 GEN6 จาก SOSECURE">cert</button></p></div>
+              </li>
+              <li>
+                <time>พ.ย.</time>
+                <div><strong>TESA Top Gun Rally 2025</strong><p>หัวข้อ “Defense Innovations” ที่โรงเรียนนายร้อยพระจุลจอมเกล้า <button type="button" data-full="assets/img/certs/tesa-top-gun-rally-2025.jpg" data-alt="เกียรติบัตร TESA Top Gun Rally 2025">cert</button></p></div>
+              </li>
+              <li class="hot">
+                <time>ก.ค.</time>
+                <div><strong>ชนะเลิศ Mini CTF · NCSA CTF Boot Camp</strong><p>ทีม “กองกำลังแฮกเกอร์” ที่หาดใหญ่ จัดโดย สกมช. <button type="button" data-full="assets/img/certs/mini-ctf-winner-2025.jpg" data-alt="ประกาศนียบัตรรางวัลชนะเลิศ Mini CTF จาก สกมช.">cert</button></p></div>
+              </li>
+              <li>
+                <time>พ.ค.</time>
+                <div><strong>Basic Cybersecurity · NCSA MOOC</strong><p>จบหลักสูตร <button type="button" data-full="assets/img/certs/ncsa-basic-cybersecurity.jpg" data-alt="Certificate of Completion หลักสูตร Basic Cybersecurity จาก NCSA MOOC">cert</button></p></div>
+              </li>
+              <li>
+                <time>เม.ย. – มิ.ย.</time>
+                <div><strong>Backend Developer Intern · Nightbears Technology</strong><p>ฝึกงาน 2 เดือน <button type="button" data-full="assets/img/certs/nightbears-internship.jpg" data-alt="Certificate of Internship จาก Nightbears Technology">cert</button></p></div>
+              </li>
+              <li>
+                <time>มี.ค.</time>
+                <div><strong>Super AI Engineer Season 5</strong><p>ผ่านระดับ Foundation AI (Theory) <button type="button" data-full="assets/img/certs/super-ai-engineer-ss5.jpg" data-alt="Certificate Super AI Engineer Season 5 ระดับ Foundation AI">cert</button></p></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="year">
+            <h3>2024</h3>
+            <ul>
+              <li>
+                <time>พ.ย.</time>
+                <div><strong>TESA Top Gun Rally 2024</strong><p>มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา <button type="button" data-full="assets/img/certs/tesa-top-gun-rally-2024.jpg" data-alt="Certificate of Attendance TESA Top Gun Rally 2024">cert</button></p></div>
+              </li>
+              <li>
+                <time>พ.ค.</time>
+                <div><strong>ค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31</strong><p>ภาคปฏิบัติที่ภูเก็ต <a href="https://cas.wu.ac.th/archives/27200" rel="noopener">ข่าว</a> <button type="button" data-full="assets/img/certs/marine-ecology-31.jpg" data-alt="วุฒิบัตรโครงการค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31">cert</button></p></div>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <h3 class="label">ls ~/certs</h3>
-        <div class="certs">
-          <figure class="shot shot-win">
-            <button type="button" data-full="assets/img/certs/mini-ctf-winner-2025.jpg" data-alt="ประกาศนียบัตรรางวัลชนะเลิศ Mini CTF จาก สกมช.">
-              <img src="assets/img/thumbs/certs/mini-ctf-winner-2025.jpg" alt="ประกาศนียบัตรรางวัลชนะเลิศ Mini CTF" loading="lazy" width="1600" height="1121">
-            </button>
-            <figcaption><b>Mini CTF — winner</b>NCSA · 2025</figcaption>
-          </figure>
-          <figure class="shot">
-            <button type="button" data-full="assets/img/certs/ncsa-cisco-ctf-2026.jpg" data-alt="เกียรติบัตร NCSA x CISCO CTF 2026">
-              <img src="assets/img/thumbs/certs/ncsa-cisco-ctf-2026.jpg" alt="เกียรติบัตร NCSA x CISCO CTF 2026" loading="lazy" width="1600" height="1131">
-            </button>
-            <figcaption><b>NCSA x CISCO CTF</b>NCSA · 2026</figcaption>
-          </figure>
-          <figure class="shot">
-            <button type="button" data-full="assets/img/certs/sosecure-road-to-cybersecurity-gen6.jpg" data-alt="Certificate หลักสูตร Road To Cybersecurity 2025 GEN6 จาก SOSECURE">
-              <img src="assets/img/thumbs/certs/sosecure-road-to-cybersecurity-gen6.jpg" alt="Certificate Road To Cybersecurity 2025 GEN6" loading="lazy" width="1600" height="1131">
-            </button>
-            <figcaption><b>Road To Cybersecurity GEN6</b>SOSECURE · 2025</figcaption>
-          </figure>
-          <figure class="shot">
-            <button type="button" data-full="assets/img/certs/ncsa-basic-cybersecurity.jpg" data-alt="Certificate of Completion หลักสูตร Basic Cybersecurity จาก NCSA MOOC">
-              <img src="assets/img/thumbs/certs/ncsa-basic-cybersecurity.jpg" alt="Certificate Basic Cybersecurity จาก NCSA MOOC" loading="lazy" width="1600" height="1132">
-            </button>
-            <figcaption><b>Basic Cybersecurity</b>NCSA MOOC · 2025</figcaption>
-          </figure>
-          <figure class="shot">
-            <button type="button" data-full="assets/img/certs/tesa-top-gun-rally-2025.jpg" data-alt="เกียรติบัตร TESA Top Gun Rally 2025">
-              <img src="assets/img/thumbs/certs/tesa-top-gun-rally-2025.jpg" alt="เกียรติบัตร TESA Top Gun Rally 2025" loading="lazy" width="1172" height="818">
-            </button>
-            <figcaption><b>TESA Top Gun Rally</b>TESA · 2025</figcaption>
-          </figure>
-          <figure class="shot">
-            <button type="button" data-full="assets/img/certs/tesa-top-gun-rally-2024.jpg" data-alt="Certificate of Attendance TESA Top Gun Rally 2024">
-              <img src="assets/img/thumbs/certs/tesa-top-gun-rally-2024.jpg" alt="Certificate of Attendance TESA Top Gun Rally 2024" loading="lazy" width="1600" height="1132">
-            </button>
-            <figcaption><b>TESA Top Gun Rally</b>TESA · 2024</figcaption>
-          </figure>
-          <figure class="shot">
-            <button type="button" data-full="assets/img/certs/super-ai-engineer-ss5.jpg" data-alt="Certificate Super AI Engineer Season 5 ระดับ Foundation AI">
-              <img src="assets/img/thumbs/certs/super-ai-engineer-ss5.jpg" alt="Certificate Super AI Engineer Season 5" loading="lazy" width="1600" height="1132">
-            </button>
-            <figcaption><b>Super AI Engineer SS5</b>AIAT · 2025</figcaption>
-          </figure>
-          <figure class="shot">
-            <button type="button" data-full="assets/img/certs/nightbears-internship.jpg" data-alt="Certificate of Internship จาก Nightbears Technology">
-              <img src="assets/img/thumbs/certs/nightbears-internship.jpg" alt="Certificate of Internship จาก Nightbears Technology" loading="lazy" width="1600" height="1132">
-            </button>
-            <figcaption><b>Backend Developer Intern</b>Nightbears · 2025</figcaption>
-          </figure>
-          <figure class="shot">
-            <button type="button" data-full="assets/img/certs/ningbo-exchange-2026.jpg" data-alt="Certificate of Completion จาก Ningbo City College of Vocational Technology">
-              <img src="assets/img/thumbs/certs/ningbo-exchange-2026.jpg" alt="Certificate of Completion จาก Ningbo City College of Vocational Technology" loading="lazy" width="1183" height="815">
-            </button>
-            <figcaption><b>Cross-cultural Exchange</b>Ningbo · 2026</figcaption>
-          </figure>
-          <figure class="shot">
-            <button type="button" data-full="assets/img/certs/marine-ecology-31.jpg" data-alt="วุฒิบัตรโครงการค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31">
-              <img src="assets/img/thumbs/certs/marine-ecology-31.jpg" alt="วุฒิบัตรโครงการค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31" loading="lazy" width="1152" height="857">
-            </button>
-            <figcaption><b>Marine Ecology Course</b>WU · 2024</figcaption>
-          </figure>
+        <h3 class="sub">Field photos</h3>
+        <div class="mosaic">
+          <button class="tile tile-lg" type="button" data-full="assets/img/events/ctf-2025.jpg" data-alt="ห้องแข่งขัน CTF ปี 2025">
+            <img src="assets/img/events/ctf-2025.jpg" alt="ห้องแข่งขัน CTF ปี 2025 ผู้เข้าแข่งขันนั่งทำโจทย์หน้าแล็ปท็อป" loading="lazy" width="1600" height="1066">
+            <span><b>CTF</b>2025</span>
+          </button>
+          <button class="tile" type="button" data-full="assets/img/events/tesa-top-gun-rally-2025.jpg" data-alt="ทีม COE-AI มหาวิทยาลัยวลัยลักษณ์ ในงาน TESA Top Gun Rally 2025">
+            <img src="assets/img/thumbs/events/tesa-top-gun-rally-2025.jpg" alt="ทีม COE-AI มหาวิทยาลัยวลัยลักษณ์ รับเกียรติบัตร TESA Top Gun Rally 2025" loading="lazy" width="760" height="428">
+            <span><b>TESA Top Gun Rally</b>2025</span>
+          </button>
+          <button class="tile" type="button" data-full="assets/img/events/marine-ecology-2024.jpg" data-alt="กิจกรรมค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31">
+            <img src="assets/img/thumbs/events/marine-ecology-2024.jpg" alt="ภาพรวมกิจกรรมค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31" loading="lazy" width="760" height="507">
+            <span><b>Marine Ecology Course</b>2024</span>
+          </button>
         </div>
 
-        <aside class="explainer">
-          <div class="explainer-head">&gt;&gt; SO WHAT</div>
-          <p>ใบประกาศไม่ได้บอกว่าเก่งแค่ไหน แต่บอกว่าไปอยู่ตรงนั้นจริง — ทุกบรรทัดในเส้นทางนี้เปิดดูหลักฐานได้ และไม่มีรางวัลหรือผลงานที่ยังไม่ได้ทำ</p>
-        </aside>
+        <h3 class="sub">Certificates <small>เลื่อนดูได้ · กดเพื่อขยาย</small></h3>
+        <div class="rail" tabindex="0" aria-label="Certificates">
+          <button class="cert cert-win" type="button" data-full="assets/img/certs/mini-ctf-winner-2025.jpg" data-alt="ประกาศนียบัตรรางวัลชนะเลิศ Mini CTF จาก สกมช.">
+            <img src="assets/img/thumbs/certs/mini-ctf-winner-2025.jpg" alt="ประกาศนียบัตรรางวัลชนะเลิศ Mini CTF" loading="lazy" width="760" height="532">
+            <span><b>Mini CTF — Winner</b>NCSA · 2025</span>
+          </button>
+          <button class="cert" type="button" data-full="assets/img/certs/ncsa-cisco-ctf-2026.jpg" data-alt="เกียรติบัตร NCSA x CISCO CTF 2026">
+            <img src="assets/img/thumbs/certs/ncsa-cisco-ctf-2026.jpg" alt="เกียรติบัตร NCSA x CISCO CTF 2026" loading="lazy" width="760" height="537">
+            <span><b>NCSA x CISCO CTF</b>NCSA · 2026</span>
+          </button>
+          <button class="cert" type="button" data-full="assets/img/certs/sosecure-road-to-cybersecurity-gen6.jpg" data-alt="Certificate หลักสูตร Road To Cybersecurity 2025 GEN6 จาก SOSECURE">
+            <img src="assets/img/thumbs/certs/sosecure-road-to-cybersecurity-gen6.jpg" alt="Certificate Road To Cybersecurity 2025 GEN6" loading="lazy" width="760" height="537">
+            <span><b>Road To Cybersecurity GEN6</b>SOSECURE · 2025</span>
+          </button>
+          <button class="cert" type="button" data-full="assets/img/certs/ncsa-basic-cybersecurity.jpg" data-alt="Certificate of Completion หลักสูตร Basic Cybersecurity จาก NCSA MOOC">
+            <img src="assets/img/thumbs/certs/ncsa-basic-cybersecurity.jpg" alt="Certificate Basic Cybersecurity จาก NCSA MOOC" loading="lazy" width="760" height="538">
+            <span><b>Basic Cybersecurity</b>NCSA MOOC · 2025</span>
+          </button>
+          <button class="cert" type="button" data-full="assets/img/certs/tesa-top-gun-rally-2025.jpg" data-alt="เกียรติบัตร TESA Top Gun Rally 2025">
+            <img src="assets/img/thumbs/certs/tesa-top-gun-rally-2025.jpg" alt="เกียรติบัตร TESA Top Gun Rally 2025" loading="lazy" width="760" height="530">
+            <span><b>TESA Top Gun Rally</b>TESA · 2025</span>
+          </button>
+          <button class="cert" type="button" data-full="assets/img/certs/tesa-top-gun-rally-2024.jpg" data-alt="Certificate of Attendance TESA Top Gun Rally 2024">
+            <img src="assets/img/thumbs/certs/tesa-top-gun-rally-2024.jpg" alt="Certificate of Attendance TESA Top Gun Rally 2024" loading="lazy" width="760" height="538">
+            <span><b>TESA Top Gun Rally</b>TESA · 2024</span>
+          </button>
+          <button class="cert" type="button" data-full="assets/img/certs/super-ai-engineer-ss5.jpg" data-alt="Certificate Super AI Engineer Season 5 ระดับ Foundation AI">
+            <img src="assets/img/thumbs/certs/super-ai-engineer-ss5.jpg" alt="Certificate Super AI Engineer Season 5" loading="lazy" width="760" height="538">
+            <span><b>Super AI Engineer SS5</b>AIAT · 2025</span>
+          </button>
+          <button class="cert" type="button" data-full="assets/img/certs/nightbears-internship.jpg" data-alt="Certificate of Internship จาก Nightbears Technology">
+            <img src="assets/img/thumbs/certs/nightbears-internship.jpg" alt="Certificate of Internship จาก Nightbears Technology" loading="lazy" width="760" height="538">
+            <span><b>Backend Developer Intern</b>Nightbears · 2025</span>
+          </button>
+          <button class="cert" type="button" data-full="assets/img/certs/ningbo-exchange-2026.jpg" data-alt="Certificate of Completion จาก Ningbo City College of Vocational Technology">
+            <img src="assets/img/thumbs/certs/ningbo-exchange-2026.jpg" alt="Certificate of Completion จาก Ningbo City College of Vocational Technology" loading="lazy" width="760" height="524">
+            <span><b>Cross-cultural Exchange</b>Ningbo · 2026</span>
+          </button>
+          <button class="cert" type="button" data-full="assets/img/certs/marine-ecology-31.jpg" data-alt="วุฒิบัตรโครงการค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31">
+            <img src="assets/img/thumbs/certs/marine-ecology-31.jpg" alt="วุฒิบัตรโครงการค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31" loading="lazy" width="760" height="565">
+            <span><b>Marine Ecology Course</b>WU · 2024</span>
+          </button>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="section section-last" id="contact">
       <div class="wrap">
-        <div class="section-head">
-          <span class="num">05 —</span>
-          <h2>contact</h2>
-        </div>
-        <div class="contact-grid">
-          <div>
-            <p class="contact-pitch">มีระบบอยากให้ช่วยดู หรืออยากคุยเรื่อง security, CTF และงานวิจัย — ส่งข้อความมาได้เลย</p>
-            <a class="btn btn-primary" href="mailto:adu27747g@gmail.com">./contact --email</a>
-          </div>
-          <div class="terminal">
-            <p><span class="signal">wa@victus:~$</span> ./contact --all</p>
-            <dl class="links">
-              <dt>email</dt><dd><a href="mailto:adu27747g@gmail.com">adu27747g@gmail.com</a></dd>
-              <dt>github</dt><dd><a href="https://github.com/Ahmadaduwa" rel="noopener">github.com/Ahmadaduwa</a></dd>
-              <dt>htb</dt><dd><a href="https://app.hackthebox.com/users/1704621" rel="noopener">hackthebox.com/users/1704621</a></dd>
-              <dt>medium</dt><dd><a href="https://medium.com/@adu27747g" rel="noopener">medium.com/@adu27747g</a></dd>
-              <dt>facebook</dt><dd><a href="https://www.facebook.com/amadaduwa.daoh.1" rel="noopener">facebook.com/amadaduwa.daoh.1</a></dd>
-            </dl>
-          </div>
+        <div class="cta">
+          <p class="eyebrow">05 / contact</p>
+          <h2>มีระบบอยากให้ช่วยดู?</h2>
+          <p>หรืออยากคุยเรื่อง security, CTF และงานวิจัย — ส่งข้อความมาได้เลย</p>
+          <a class="mail" href="mailto:adu27747g@gmail.com">adu27747g@gmail.com</a>
+          <ul class="socials">
+            <li><a href="https://github.com/Ahmadaduwa" rel="noopener">GitHub ↗</a></li>
+            <li><a href="https://app.hackthebox.com/users/1704621" rel="noopener">HackTheBox ↗</a></li>
+            <li><a href="https://medium.com/@adu27747g" rel="noopener">Medium ↗</a></li>
+            <li><a href="https://www.facebook.com/amadaduwa.daoh.1" rel="noopener">Facebook ↗</a></li>
+          </ul>
         </div>
       </div>
     </section>
@@ -477,7 +483,7 @@
   <footer class="footer">
     <div class="wrap">
       <span>© 2026 Aduwa</span>
-      <a href="#top">cd ~ ↑</a>
+      <a href="#top">กลับขึ้นบน ↑</a>
     </div>
   </footer>
 
