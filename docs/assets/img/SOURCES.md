@@ -18,3 +18,5 @@ Every image used by the site, and the file in `ref/` it came from. PDFs were ren
 | `certs/ningbo-exchange-2026.jpg` | `ref/Screenshot 2026-10-03 115637.png` |
 | `certs/marine-ecology-31.jpg` | `ref/Screenshot 2026-10-03 115603.png` |
 | `paper/ieee-icst-2025.png` | `ref/Screenshot 2026-10-03 114414.png` |
+| `projects/drone-detection.jpg` | `final_result.jpg` in github.com/Ahmadaduwa/tesa2025 |
+| `projects/durian-leaves.jpg` | top row of `output.png` in github.com/Ahmadaduwa/durianLeafDisease |

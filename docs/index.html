@@ -48,13 +48,25 @@
             <a class="btn" href="https://github.com/Ahmadaduwa" rel="noopener">github ↗</a>
           </div>
         </div>
-        <dl class="facts">
-          <dt>focus</dt><dd>pentest · CTF</dd>
-          <dt>now</dt><dd>intern @ Armstrong Techs</dd>
-          <dt>research</dt><dd>landslide EWS (IEEE)</dd>
-          <dt>practice</dt><dd>HTB Academy</dd>
-          <dt>based</dt><dd>Thailand</dd>
-        </dl>
+        <div class="panel">
+          <div class="panel-bar"><span>about.yml</span><span>read-only</span></div>
+          <dl class="facts">
+            <dt>focus</dt><dd>pentest · CTF</dd>
+            <dt>now</dt><dd>intern @ Armstrong Techs</dd>
+            <dt>research</dt><dd>landslide EWS (IEEE)</dd>
+            <dt>practice</dt><dd>HTB Academy · HackTheBox</dd>
+            <dt>based</dt><dd>Thailand</dd>
+          </dl>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <ul class="stats">
+          <li><b>01</b><span>IEEE paper<small>ICST 2025 · co-author</small></span></li>
+          <li><b>1st</b><span>Mini CTF<small>NCSA CTF Boot Camp 2025</small></span></li>
+          <li><b>03</b><span>pentest write-ups<small>HTB Academy · Medium</small></span></li>
+          <li><b>02</b><span>internships<small>Nightbears · Armstrong Techs</small></span></li>
+        </ul>
       </div>
     </section>
 
@@ -63,49 +75,77 @@
         <div class="section-head">
           <span class="num">01 —</span>
           <h2>projects</h2>
-          <span class="cmd">ls ~/projects | wc -l</span>
+          <span class="cmd">ls ~/projects | wc -l <b>→ 4</b></span>
         </div>
 
-        <div class="cards">
-          <article class="card">
-            <div class="card-bar"><span>~/projects/landslide</span><span>published · IEEE ICST 2025</span></div>
-            <button class="card-shot" type="button" data-full="assets/img/paper/ieee-icst-2025.png" data-alt="หน้า IEEE Xplore ของ paper A LoRaWAN-based Landslide Early Warning System using Unsupervised AI">
+        <div class="cases">
+          <article class="case">
+            <button class="case-shot" type="button" data-full="assets/img/paper/ieee-icst-2025.png" data-alt="หน้า IEEE Xplore ของ paper A LoRaWAN-based Landslide Early Warning System using Unsupervised AI">
               <img src="assets/img/paper/ieee-icst-2025.png" alt="หน้า IEEE Xplore ของ paper ระบบเตือนภัยดินถล่ม" loading="lazy" width="1373" height="777">
             </button>
-            <div class="card-body">
-              <h3><a href="https://ieeexplore.ieee.org/document/11512451" rel="noopener">Landslide Early Warning System</a></h3>
-              <p>โหนดเซ็นเซอร์วัดฝน ความชื้นดิน แรงสั่นสะเทือน ส่งข้อมูลผ่าน LoRaWAN แล้วใช้ Isolation Forest จับความผิดปกติก่อนดินถล่ม (F1 0.73) ใช้กับพื้นที่ อ.สิชล จ.นครศรีธรรมราช · <a href="https://github.com/Ahmadaduwa/Landslide" rel="noopener">code</a> · <a href="https://www.wu.ac.th/th/news/26262/" rel="noopener">ข่าว</a></p>
-              <ul class="tags"><li>LoRaWAN</li><li>Isolation Forest</li><li>LSTM</li><li>IEEE</li></ul>
+            <div class="case-body">
+              <div class="case-meta"><span>~/projects/landslide</span><span class="status">published · IEEE ICST 2025</span></div>
+              <h3>Landslide Early Warning System</h3>
+              <p>ระบบเตือนภัยดินถล่มต้นทุนต่ำ: โหนดเซ็นเซอร์พลังงานแสงอาทิตย์วัดฝน ความชื้นดิน และแรงสั่นสะเทือน ส่งข้อมูลผ่าน LoRaWAN แล้วใช้ Isolation Forest จับความผิดปกติก่อนดินถล่ม ใช้กับพื้นที่ อ.สิชล จ.นครศรีธรรมราช</p>
+              <p class="pipeline">sensor node <i>→</i> LoRaWAN <i>→</i> cloud <i>→</i> Isolation Forest <i>→</i> alert</p>
+              <dl class="metrics">
+                <div><dt>F1-score</dt><dd>0.73</dd></div>
+                <div><dt>sensor types</dt><dd>5</dd></div>
+                <div><dt>venue</dt><dd>IEEE</dd></div>
+              </dl>
+              <ul class="tags"><li>LoRaWAN</li><li>Isolation Forest</li><li>LSTM</li><li>Python</li></ul>
+              <p class="case-links"><a href="https://ieeexplore.ieee.org/document/11512451" rel="noopener">paper ↗</a><a href="https://github.com/Ahmadaduwa/Landslide" rel="noopener">code ↗</a><a href="https://www.wu.ac.th/th/news/26262/" rel="noopener">news ↗</a></p>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card-bar"><span>~/projects/tesa2025</span><span>competition · 2025</span></div>
-            <button class="card-shot" type="button" data-full="assets/img/events/tesa-top-gun-rally-2025.jpg" data-alt="ทีม COE-AI มหาวิทยาลัยวลัยลักษณ์ รับเกียรติบัตรในงาน TESA Top Gun Rally 2025">
-              <img src="assets/img/events/tesa-top-gun-rally-2025.jpg" alt="ทีม COE-AI มหาวิทยาลัยวลัยลักษณ์ ในงาน TESA Top Gun Rally 2025" loading="lazy" width="1600" height="900">
+          <article class="case">
+            <button class="case-shot" type="button" data-full="assets/img/projects/drone-detection.jpg" data-alt="ผลตรวจจับโดรนจากกล้อง กรอบสีเขียวพร้อมค่าความสูงที่ทำนายได้">
+              <img src="assets/img/projects/drone-detection.jpg" alt="ผลตรวจจับโดรนจากกล้อง มีกรอบสีเขียวรอบโดรนพร้อมค่าความสูง" loading="lazy" width="1600" height="900">
             </button>
-            <div class="card-body">
-              <h3><a href="https://github.com/Ahmadaduwa/tesa2025" rel="noopener">Drone Detection &amp; Tracking</a></h3>
-              <p>ระบบตรวจจับและติดตามโดรนแบบ real-time สำหรับ TESA Top Gun Rally 2025: YOLO + ByteTrack, ทำนายพิกัด GPS ด้วย EfficientNet-B0, backend WebSocket/UDP และ dashboard บนแผนที่</p>
-              <ul class="tags"><li>YOLO</li><li>ByteTrack</li><li>PostgreSQL</li><li>MQTT</li><li>MATLAB</li></ul>
+            <div class="case-body">
+              <div class="case-meta"><span>~/projects/tesa2025</span><span class="status">TESA Top Gun Rally 2025</span></div>
+              <h3>Drone Detection &amp; Tracking</h3>
+              <p>ระบบตรวจจับและติดตามโดรนแบบ real-time หัวข้อ “Defense Innovations”: หาโดรนในภาพด้วย YOLO, ติดตามด้วย ByteTrack, ทำนายพิกัดและความสูงด้วย EfficientNet-B0 แล้วแสดงบน dashboard แผนที่</p>
+              <p class="pipeline">camera <i>→</i> YOLO <i>→</i> ByteTrack <i>→</i> lat / lon / alt <i>→</i> dashboard</p>
+              <ul class="tags"><li>YOLO</li><li>ByteTrack</li><li>EfficientNet-B0</li><li>PostgreSQL</li><li>MQTT</li><li>MATLAB</li></ul>
+              <p class="case-links"><a href="https://github.com/Ahmadaduwa/tesa2025" rel="noopener">code ↗</a><button class="link-btn" type="button" data-full="assets/img/events/tesa-top-gun-rally-2025.jpg" data-alt="ทีม COE-AI มหาวิทยาลัยวลัยลักษณ์ ในงาน TESA Top Gun Rally 2025">team photo</button></p>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card-bar"><span>~/projects/tesa2024</span><span>competition · 2024</span></div>
-            <div class="card-body">
-              <h3><a href="https://github.com/Ahmadaduwa/PROJECT_TESA_2024" rel="noopener">Real-time Audio Signal IoT</a></h3>
-              <p>โปรแกรม C แบบ multi-thread: จับเสียงผ่าน ALSA, แปลง FFT, จำแนกสัญญาณด้วย KNN, เก็บลง SQLite และส่งผลผ่าน MQTT — งาน TESA Top Gun Rally 2024</p>
-              <ul class="tags"><li>C</li><li>pthreads</li><li>ALSA</li><li>FFT</li><li>MQTT</li></ul>
-            </div>
-          </article>
-
-          <article class="card">
-            <div class="card-bar"><span>~/projects/durian</span><span>AI · mobile</span></div>
-            <div class="card-body">
-              <h3><a href="https://github.com/Ahmadaduwa/durianLeafDisease" rel="noopener">Durian Leaf Disease AI</a></h3>
-              <p>จำแนกโรคใบทุเรียน 5 กลุ่มด้วย transfer learning เทียบ 5 โมเดล พร้อม Grad-CAM แล้วต่อยอดเป็นแอป <a href="https://github.com/Ahmadaduwa/flutter_durian" rel="noopener">RooJai Durian</a> สำหรับชาวสวน</p>
+          <article class="case">
+            <button class="case-shot" type="button" data-full="assets/img/projects/durian-leaves.jpg" data-alt="ตัวอย่างภาพใบทุเรียนจากชุดข้อมูล 4 ใบ">
+              <img src="assets/img/projects/durian-leaves.jpg" alt="ตัวอย่างภาพใบทุเรียนจากชุดข้อมูล" loading="lazy" width="808" height="808">
+            </button>
+            <div class="case-body">
+              <div class="case-meta"><span>~/projects/durian</span><span class="status">AI · mobile</span></div>
+              <h3>Durian Leaf Disease AI</h3>
+              <p>จำแนกโรคใบทุเรียน 5 กลุ่มด้วย transfer learning เทียบ 5 โมเดลแล้วรวมผลแบบ ensemble พร้อม Grad-CAM ให้เห็นว่าโมเดลดูตรงไหนของใบ ต่อยอดเป็นแอป RooJai Durian สำหรับชาวสวน</p>
+              <p class="pipeline">leaf photo <i>→</i> 5 CNNs <i>→</i> ensemble <i>→</i> disease + Grad-CAM</p>
+              <dl class="metrics">
+                <div><dt>accuracy</dt><dd>97.7%</dd></div>
+                <div><dt>test images</dt><dd>612</dd></div>
+                <div><dt>classes</dt><dd>5</dd></div>
+              </dl>
               <ul class="tags"><li>PyTorch</li><li>Transfer Learning</li><li>Grad-CAM</li><li>Flutter</li></ul>
+              <p class="case-links"><a href="https://github.com/Ahmadaduwa/durianLeafDisease" rel="noopener">model ↗</a><a href="https://github.com/Ahmadaduwa/flutter_durian" rel="noopener">app ↗</a></p>
+            </div>
+          </article>
+
+          <article class="case">
+            <div class="case-shot case-tree" aria-hidden="true">
+<pre>sound_app.c
+├─ alsa_thr.c    capture @ 48 kHz
+├─ fft_thr.c     FFT + KNN classify
+├─ db_helper.c   SQLite storage
+└─ iot_app.c     MQTT publish</pre>
+            </div>
+            <div class="case-body">
+              <div class="case-meta"><span>~/projects/tesa2024</span><span class="status">TESA Top Gun Rally 2024</span></div>
+              <h3>Real-time Audio Signal IoT</h3>
+              <p>โปรแกรม C แบบ multi-thread: จับเสียงผ่าน ALSA, แปลง FFT, จำแนกสัญญาณด้วย KNN, เก็บลง SQLite และส่งผลพร้อมรับคำสั่งผ่าน MQTT</p>
+              <p class="pipeline">microphone <i>→</i> ALSA <i>→</i> FFT <i>→</i> KNN <i>→</i> SQLite + MQTT</p>
+              <ul class="tags"><li>C</li><li>pthreads</li><li>ALSA</li><li>FFT</li><li>MQTT</li></ul>
+              <p class="case-links"><a href="https://github.com/Ahmadaduwa/PROJECT_TESA_2024" rel="noopener">code ↗</a></p>
             </div>
           </article>
         </div>
@@ -122,7 +162,7 @@
         <div class="section-head">
           <span class="num">02 —</span>
           <h2>writeups</h2>
-          <span class="cmd">ls ~/writeups | wc -l</span>
+          <span class="cmd">ls ~/writeups | wc -l <b>→ 3</b></span>
         </div>
 
         <ul class="rows">
@@ -174,6 +214,7 @@
         </div>
 
         <ol class="timeline">
+          <li class="year"><span>2026</span></li>
           <li class="now">
             <time>2026-09 → 2027-04</time>
             <div><strong>Intern (Cooperative Education) — <a href="https://www.armstrongtechs.com/" rel="noopener">Armstrong Techs</a></strong><p>สหกิจศึกษา 14 ก.ย. 2026 – 9 เม.ย. 2027</p></div>
@@ -186,6 +227,7 @@
             <time>2026-03 → 2026-04</time>
             <div><strong>Cross-cultural Exchange — Ningbo, China</strong><p>Student Training Program ที่ Ningbo City College of Vocational Technology · <button class="link-btn" type="button" data-full="assets/img/certs/ningbo-exchange-2026.jpg" data-alt="Certificate of Completion จาก Ningbo City College of Vocational Technology">cert</button></p></div>
           </li>
+          <li class="year"><span>2025</span></li>
           <li>
             <time>2025-12</time>
             <div><strong>IEEE paper — ICST 2025</strong><p>ผู้เขียนร่วม “A LoRaWAN-based Landslide Early Warning System using Unsupervised AI” · <a href="https://doi.org/10.1109/ICST66402.2025.11512451" rel="noopener">DOI</a></p></div>
@@ -214,6 +256,7 @@
             <time>2025-03</time>
             <div><strong>Super AI Engineer Season 5</strong><p>ผ่านระดับ Foundation AI (Theory) · <button class="link-btn" type="button" data-full="assets/img/certs/super-ai-engineer-ss5.jpg" data-alt="Certificate Super AI Engineer Season 5 ระดับ Foundation AI">cert</button></p></div>
           </li>
+          <li class="year"><span>2024</span></li>
           <li>
             <time>2024-11</time>
             <div><strong>TESA Top Gun Rally 2024</strong><p>มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา · <button class="link-btn" type="button" data-full="assets/img/certs/tesa-top-gun-rally-2024.jpg" data-alt="Certificate of Attendance TESA Top Gun Rally 2024">cert</button></p></div>
@@ -248,7 +291,7 @@
 
         <h3 class="label">ls ~/certs</h3>
         <div class="certs">
-          <figure class="shot">
+          <figure class="shot shot-win">
             <button type="button" data-full="assets/img/certs/mini-ctf-winner-2025.jpg" data-alt="ประกาศนียบัตรรางวัลชนะเลิศ Mini CTF จาก สกมช.">
               <img src="assets/img/certs/mini-ctf-winner-2025.jpg" alt="ประกาศนียบัตรรางวัลชนะเลิศ Mini CTF" loading="lazy" width="1600" height="1121">
             </button>
@@ -323,15 +366,21 @@
           <span class="num">04 —</span>
           <h2>contact</h2>
         </div>
-        <div class="terminal">
-          <p><span class="signal">wa@victus:~$</span> ./contact --email</p>
-          <p class="out">→ <a href="mailto:adu27747g@gmail.com">adu27747g@gmail.com</a></p>
-          <p><span class="signal">wa@victus:~$</span> ./contact --github</p>
-          <p class="out">→ <a href="https://github.com/Ahmadaduwa" rel="noopener">github.com/Ahmadaduwa</a></p>
-          <p><span class="signal">wa@victus:~$</span> ./contact --medium</p>
-          <p class="out">→ <a href="https://medium.com/@adu27747g" rel="noopener">medium.com/@adu27747g</a></p>
-          <p><span class="signal">wa@victus:~$</span> ./contact --facebook</p>
-          <p class="out">→ <a href="https://www.facebook.com/amadaduwa.daoh.1" rel="noopener">facebook.com/amadaduwa.daoh.1</a></p>
+        <div class="contact-grid">
+          <div>
+            <p class="contact-pitch">มีระบบอยากให้ช่วยดู หรืออยากคุยเรื่อง security, CTF และงานวิจัย — ส่งข้อความมาได้เลย</p>
+            <a class="btn btn-primary" href="mailto:adu27747g@gmail.com">./contact --email</a>
+          </div>
+          <div class="terminal">
+            <p><span class="signal">wa@victus:~$</span> ./contact --all</p>
+            <dl class="links">
+              <dt>email</dt><dd><a href="mailto:adu27747g@gmail.com">adu27747g@gmail.com</a></dd>
+              <dt>github</dt><dd><a href="https://github.com/Ahmadaduwa" rel="noopener">github.com/Ahmadaduwa</a></dd>
+              <dt>htb</dt><dd><a href="https://app.hackthebox.com/users/1704621" rel="noopener">hackthebox.com/users/1704621</a></dd>
+              <dt>medium</dt><dd><a href="https://medium.com/@adu27747g" rel="noopener">medium.com/@adu27747g</a></dd>
+              <dt>facebook</dt><dd><a href="https://www.facebook.com/amadaduwa.daoh.1" rel="noopener">facebook.com/amadaduwa.daoh.1</a></dd>
+            </dl>
+          </div>
         </div>
       </div>
     </section>
@@ -340,7 +389,7 @@
   <footer class="footer">
     <div class="wrap">
       <span>© 2026 Aduwa</span>
-      <span>Terminal Field Notes · hosted on GitHub Pages</span>
+      <a href="#top">cd ~ ↑</a>
     </div>
   </footer>
 

@@ -34,6 +34,45 @@
     })();
   }
 
+  // nav highlights the section in view
+  var links = document.querySelectorAll(".nav-links a");
+  if ("IntersectionObserver" in window) {
+    var spy = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (!entry.isIntersecting) return;
+          links.forEach(function (link) {
+            var on = link.getAttribute("href") === "#" + entry.target.id;
+            if (on) link.setAttribute("aria-current", "true");
+            else link.removeAttribute("aria-current");
+          });
+        });
+      },
+      { rootMargin: "-40% 0px -55% 0px" }
+    );
+    document.querySelectorAll("section[id]").forEach(function (section) {
+      spy.observe(section);
+    });
+
+    // blocks fade in once as they scroll into view
+    if (!reduced) {
+      var reveal = new IntersectionObserver(
+        function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("in");
+            reveal.unobserve(entry.target);
+          });
+        },
+        { threshold: 0.05 }
+      );
+      document.querySelectorAll(".case, .rows, .explainer, .timeline li, .shot, .contact-grid").forEach(function (el) {
+        el.classList.add("reveal");
+        reveal.observe(el);
+      });
+    }
+  }
+
   // lightbox for photos and certificates
   var box = document.querySelector(".lightbox");
   var boxImg = box.querySelector("img");
