@@ -2160,3 +2160,39 @@ img.broken {
     margin-left: 0;
   }
 }
+
+/* four field photos: one large, one wide, two small */
+.mosaic {
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+}
+
+.mosaic .tile:nth-child(2) {
+  grid-column: span 2;
+}
+
+@media (max-width: 640px) {
+  .mosaic {
+    grid-template-columns: 1fr;
+  }
+
+  .mosaic .tile:nth-child(2) {
+    grid-column: auto;
+  }
+}
+
+.rail-nav button {
+  min-width: 38px;
+  padding: 5px 12px;
+  font-family: var(--mono);
+  font-size: 14px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.rail-nav button:hover {
+  color: var(--signal);
+  border-color: var(--signal);
+}

@@ -316,10 +316,10 @@ export function Path({ open }: { open: OpenShots }) {
                           {item.cert && (
                             <button
                               type="button"
-                              aria-label={`ดูใบประกาศ: ${item.title}`}
+                              aria-label={`ดูหลักฐาน: ${item.title}`}
                               onClick={() => open([item.cert!])}
                             >
-                              cert
+                              {item.proofLabel ?? "cert"}
                             </button>
                           )}
                         </p>

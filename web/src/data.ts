@@ -305,6 +305,8 @@ export interface PathItem {
   hot?: boolean
   link?: { label: string; href: string }
   cert?: Shot
+  /** Button text for `cert` when the proof is a photo rather than a certificate. */
+  proofLabel?: string
 }
 
 const cert = (file: string, alt: string): Shot => ({ full: `assets/img/certs/${file}.jpg`, alt })
@@ -402,6 +404,19 @@ export const PATH: PathItem[] = [
   },
   {
     year: 2024,
+    when: "ก.ย.",
+    kind: "other",
+    title: "รองชนะเลิศอันดับ 1 · Research to Market ครั้งที่ 12",
+    note: "Pitching รอบระดับมหาวิทยาลัย มหาวิทยาลัยวลัยลักษณ์",
+    hot: true,
+    cert: {
+      full: "assets/img/events/research-to-market-2024.jpg",
+      alt: "ทีม 3 คนถือป้ายรางวัล 1st Runner-up โครงการ Research to Market ครั้งที่ 12 มหาวิทยาลัยวลัยลักษณ์",
+    },
+    proofLabel: "รูป",
+  },
+  {
+    year: 2024,
     when: "พ.ค.",
     kind: "other",
     title: "ค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31",
@@ -438,6 +453,15 @@ export const PHOTOS: Tile[] = [
     note: "2025",
     w: 760,
     h: 428,
+  },
+  {
+    full: "assets/img/events/research-to-market-2024.jpg",
+    thumb: "assets/img/thumbs/events/research-to-market-2024.jpg",
+    alt: "ทีม 3 คนถือป้ายรางวัล 1st Runner-up โครงการ Research to Market ครั้งที่ 12 มหาวิทยาลัยวลัยลักษณ์",
+    title: "Research to Market",
+    note: "2024",
+    w: 760,
+    h: 506,
   },
   {
     full: "assets/img/events/marine-ecology-2024.jpg",
