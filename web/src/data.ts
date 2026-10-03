@@ -167,7 +167,7 @@ export const PROJECTS: Project[] = [
       h: 428,
       shot: {
         full: "assets/img/projects/drone-detection.jpg",
-        alt: "ผลตรวจจับโดรนจากกล้อง มีกรอบสีเขียวรอบโดรนพร้อมค่าความสูงที่ทำนายได้",
+        alt: "ผลตรวจจับโดรนจากกล้อง มีกรอบสีเขียวรอบโดรนพร้อมค่า lat lng",
       },
     },
     extraShot: {
@@ -209,7 +209,7 @@ export const PROJECTS: Project[] = [
     title: "Real-time Audio Signal IoT",
     summary: "ฟังเสียง แยกประเภทสัญญาณ แล้วรายงานผลผ่านเครือข่าย ทั้งหมดบนอุปกรณ์ embedded",
     metrics: [["sampling", "48 kHz"], ["threads", "3"]],
-    role: "ฝ่าย embedded — เขียนโค้ดทั้งหมดใน repo นี้",
+    role: "ฝ่าย embedded — เขียนโค้ดทั้งหมดใน repo นี้ นอกจากโค้ดที่ดึงจาก MATLAB",
     brief: [
       ["ปัญหา", "จำแนกสัญญาณเสียงแบบ real-time บนอุปกรณ์ embedded แล้วรายงานผลผ่านเครือข่าย"],
       ["วิธีทำ", "โปรแกรม C แบบ multi-thread แยกงานจับเสียง, FFT + KNN และ MQTT ออกจากกันด้วย pthreads"],
