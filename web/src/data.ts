@@ -411,7 +411,7 @@ export const PATH: PathItem[] = [
     hot: true,
     cert: {
       full: "assets/img/events/research-to-market-2024.jpg",
-      alt: "ทีม 3 คนถือป้ายรางวัล 1st Runner-up โครงการ Research to Market ครั้งที่ 12 มหาวิทยาลัยวลัยลักษณ์",
+      alt: "ได้รับรางวัล 1st Runner-up โครงการ Research to Market ครั้งที่ 12 มหาวิทยาลัยวลัยลักษณ์",
     },
     proofLabel: "รูป",
   },
@@ -457,7 +457,7 @@ export const PHOTOS: Tile[] = [
   {
     full: "assets/img/events/research-to-market-2024.jpg",
     thumb: "assets/img/thumbs/events/research-to-market-2024.jpg",
-    alt: "ทีม 3 คนถือป้ายรางวัล 1st Runner-up โครงการ Research to Market ครั้งที่ 12 มหาวิทยาลัยวลัยลักษณ์",
+    alt: "ได้รับรางวัล 1st Runner-up โครงการ Research to Market ครั้งที่ 12 มหาวิทยาลัยวลัยลักษณ์",
     title: "Research to Market",
     note: "2024",
     w: 760,
