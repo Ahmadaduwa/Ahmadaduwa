@@ -1285,3 +1285,276 @@ a {
     column-gap: 14px;
   }
 }
+
+/* ================= v3: report cards, case briefs, toolbox ================= */
+.section-intro {
+  margin: -12px 0 28px;
+  max-width: 62ch;
+  color: var(--ink-muted);
+}
+
+/* writeups as short pentest reports */
+.reports {
+  display: grid;
+  gap: 16px;
+}
+
+.report {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  padding: 20px 24px 22px;
+  transition: border-color 0.15s;
+}
+
+.report:hover {
+  border-color: var(--ink-muted);
+}
+
+.report-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.report-meta {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
+.report h3 {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 600;
+  margin: 8px 0 16px;
+}
+
+.report h3 a {
+  text-decoration: none;
+}
+
+.report h3 a:hover {
+  color: var(--signal);
+}
+
+.chain {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  counter-reset: step;
+}
+
+.chain li {
+  flex: 1 1 170px;
+  counter-increment: step;
+  padding: 10px 12px 12px;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ink-muted);
+}
+
+.chain li b {
+  display: block;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--signal);
+  margin-bottom: 2px;
+}
+
+.chain li b::before {
+  content: counter(step, decimal-leading-zero) " ";
+  color: var(--ink-muted);
+}
+
+.impact {
+  margin: 0 0 16px;
+  padding-left: 14px;
+  border-left: 2px solid var(--amber);
+  max-width: 72ch;
+}
+
+.impact b {
+  display: block;
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.report-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.report-foot .tags {
+  margin: 0;
+  padding: 0;
+}
+
+.report-foot a {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--signal);
+  text-underline-offset: 3px;
+  white-space: nowrap;
+}
+
+/* case: title leads, image sits beside (desktop) or below the title (mobile) */
+.case {
+  grid-template-areas:
+    "shot head"
+    "shot body";
+  grid-template-rows: auto 1fr;
+}
+
+.case-head {
+  grid-area: head;
+  padding: 22px 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.case-shot {
+  grid-area: shot;
+}
+
+.case-body {
+  grid-area: body;
+  padding-top: 14px;
+}
+
+.brief {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 84px minmax(0, 1fr);
+  gap: 8px 12px;
+}
+
+.brief dt {
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 26px;
+  color: var(--ink-muted);
+}
+
+.brief dt.signal {
+  color: var(--signal);
+}
+
+.brief dd {
+  margin: 0;
+  font-size: 15px;
+  color: var(--ink-muted);
+  max-width: 60ch;
+}
+
+.brief dt.signal + dd {
+  color: var(--ink);
+}
+
+/* toolbox */
+.toolbox {
+  margin: 0;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+}
+
+.toolbox div {
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr);
+  gap: 16px;
+  align-items: center;
+  padding: 14px 20px;
+}
+
+.toolbox div + div {
+  border-top: 1px solid var(--line);
+}
+
+.toolbox dt {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--ink-muted);
+}
+
+.toolbox dd {
+  margin: 0;
+}
+
+.toolbox .tags {
+  margin: 0;
+  padding: 0;
+}
+
+.toolbox div:first-child .tags li {
+  color: var(--amber);
+  background: var(--amber-soft);
+}
+
+@media (max-width: 860px) {
+  .section-intro {
+    margin: -8px 0 22px;
+  }
+
+  .report {
+    padding: 16px 16px 18px;
+  }
+
+  .report h3 {
+    font-size: 19px;
+    line-height: 27px;
+  }
+
+  .chain li {
+    flex-basis: 130px;
+    padding: 8px 10px 10px;
+    font-size: 13px;
+  }
+
+  .case {
+    grid-template-areas:
+      "head"
+      "shot"
+      "body";
+    grid-template-rows: auto;
+  }
+
+  .case-head {
+    padding: 18px 16px 16px;
+  }
+
+  .case-shot {
+    border-top: 1px solid var(--line);
+  }
+
+  .brief {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .brief dd {
+    margin-bottom: 8px;
+  }
+
+  .toolbox div {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    padding: 14px 16px;
+  }
+}

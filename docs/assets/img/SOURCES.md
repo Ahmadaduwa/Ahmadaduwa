@@ -20,3 +20,5 @@ Every image used by the site, and the file in `ref/` it came from. PDFs were ren
 | `paper/ieee-icst-2025.png` | `ref/Screenshot 2026-10-03 114414.png` |
 | `projects/drone-detection.jpg` | `final_result.jpg` in github.com/Ahmadaduwa/tesa2025 |
 | `projects/durian-leaves.jpg` | top row of `output.png` in github.com/Ahmadaduwa/durianLeafDisease |
+
+`thumbs/` holds 760px copies of the images above, generated for the page grids; the lightbox opens the full-size file.

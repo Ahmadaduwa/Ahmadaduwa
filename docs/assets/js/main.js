@@ -66,7 +66,7 @@
         },
         { threshold: 0.05 }
       );
-      document.querySelectorAll(".case, .rows, .explainer, .timeline li, .shot, .contact-grid").forEach(function (el) {
+      document.querySelectorAll(".case, .report, .toolbox, .explainer, .timeline li, .shot, .contact-grid").forEach(function (el) {
         el.classList.add("reveal");
         reveal.observe(el);
       });
