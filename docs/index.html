@@ -28,6 +28,7 @@
   </script>
 </head>
 <body>
+  <div class="progress" aria-hidden="true"></div>
   <header class="nav">
     <div class="wrap">
       <a class="brand" href="#top">aduwa<span aria-hidden="true"></span></a>
@@ -58,26 +59,40 @@
           </div>
         </div>
 
-        <div class="term" aria-label="about">
-          <div class="term-bar"><span>about.yml</span><span>read-only</span></div>
-          <dl class="facts">
-            <dt>focus</dt><dd>pentest · CTF</dd>
-            <dt>now</dt><dd>intern @ Armstrong Techs</dd>
-            <dt>research</dt><dd>landslide EWS (IEEE)</dd>
-            <dt>practice</dt><dd>HTB Academy · HackTheBox</dd>
-            <dt>study</dt><dd>Walailak University</dd>
-            <dt>based</dt><dd>Thailand</dd>
-          </dl>
-          <p class="term-foot"><span class="signal">wa@victus:~$</span> <span class="cursor cursor-sm" aria-hidden="true"></span></p>
+        <div class="term" id="term">
+          <div class="term-bar"><span>wa@victus — interactive</span><span>พิมพ์ help</span></div>
+          <div class="term-out" aria-live="polite">
+            <p class="term-cmd"><span class="signal">wa@victus:~$</span> cat about.yml</p>
+            <dl class="facts">
+              <dt>focus</dt><dd>pentest · CTF</dd>
+              <dt>now</dt><dd>intern @ Armstrong Techs</dd>
+              <dt>research</dt><dd>landslide EWS (IEEE)</dd>
+              <dt>practice</dt><dd>HTB Academy · HackTheBox</dd>
+              <dt>study</dt><dd>Walailak University</dd>
+              <dt>based</dt><dd>Thailand</dd>
+            </dl>
+          </div>
+          <form class="term-in" autocomplete="off">
+            <label class="signal" for="cmd">wa@victus:~$</label>
+            <input id="cmd" type="text" inputmode="text" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="ลองพิมพ์ help" aria-label="Terminal command">
+          </form>
+          <div class="term-chips" aria-label="คำสั่งที่ลองได้">
+            <button type="button" data-cmd="help">help</button>
+            <button type="button" data-cmd="whoami">whoami</button>
+            <button type="button" data-cmd="writeups">writeups</button>
+            <button type="button" data-cmd="projects">projects</button>
+            <button type="button" data-cmd="explain">explain</button>
+            <button type="button" data-cmd="contact">contact</button>
+          </div>
         </div>
       </div>
 
       <div class="wrap">
         <ul class="stats">
-          <li><b>01</b><span>IEEE paper<small>ICST 2025 · co-author</small></span></li>
+          <li><b data-count="1">01</b><span>IEEE paper<small>ICST 2025 · co-author</small></span></li>
           <li><b>1st</b><span>Mini CTF<small>NCSA CTF Boot Camp 2025</small></span></li>
-          <li><b>03</b><span>Pentest write-ups<small>HTB Academy · Medium</small></span></li>
-          <li><b>02</b><span>Internships<small>Nightbears · Armstrong Techs</small></span></li>
+          <li><b data-count="3">03</b><span>Pentest write-ups<small>HTB Academy · Medium</small></span></li>
+          <li><b data-count="2">02</b><span>Internships<small>Nightbears · Armstrong Techs</small></span></li>
         </ul>
       </div>
     </section>
@@ -90,6 +105,11 @@
           <p>งานใน lab ที่เล่าให้ครบ: ทำอะไรตามลำดับ ใช้เครื่องมืออะไร และช่องโหว่นั้นกระทบอะไร</p>
         </div>
 
+        <div class="seg" role="group" aria-label="ระดับคำอธิบาย">
+          <button type="button" data-mode="tech" aria-pressed="true">Technical</button>
+          <button type="button" data-mode="plain" aria-pressed="false">อธิบายแบบคนทั่วไป</button>
+        </div>
+
         <div class="reports">
           <article class="report sev-high">
             <header>
@@ -98,10 +118,10 @@
             </header>
             <h3><a href="https://medium.com/@adu27747g/lab-write-up-attacking-common-services-hard-diffuculti-fe506c1847c6" rel="noopener">Attacking Common Services</a></h3>
             <ol class="chain">
-              <li><b>recon</b>Nmap หา service ที่เปิดอยู่</li>
-              <li><b>enumerate</b>SMB share + credential spraying</li>
-              <li><b>escalate</b>MSSQL linked server → sysadmin</li>
-              <li><b>execute</b>xp_cmdshell → NT AUTHORITY\SYSTEM</li>
+              <li><b>recon</b><span class="t">Nmap หา service ที่เปิดอยู่</span><span class="p">สำรวจว่าเครื่องนี้เปิดประตูไว้กี่บาน</span></li>
+              <li><b>enumerate</b><span class="t">SMB share + credential spraying</span><span class="p">เจอโฟลเดอร์แชร์ที่ไม่ล็อก แล้วลองรหัสที่ได้กับทุกบัญชี</span></li>
+              <li><b>escalate</b><span class="t">MSSQL linked server → sysadmin</span><span class="p">ฐานข้อมูลตัวหนึ่งเชื่อมกับอีกตัวที่ให้สิทธิ์ผู้ดูแล จึงยืมสิทธิ์นั้นมาใช้</span></li>
+              <li><b>execute</b><span class="t">xp_cmdshell → NT AUTHORITY\SYSTEM</span><span class="p">ใช้ฐานข้อมูลสั่งงานเครื่องโดยตรง จนได้สิทธิ์สูงสุดของ Windows</span></li>
             </ol>
             <p class="impact">จากโฟลเดอร์แชร์ที่ใครก็เปิดได้ ไปจบที่สิทธิ์สูงสุดของเครื่อง เพราะรหัสผ่านถูกใช้ซ้ำและฐานข้อมูลให้สิทธิ์เกินจำเป็น</p>
             <footer>
@@ -117,10 +137,10 @@
             </header>
             <h3><a href="https://medium.com/@adu27747g/lab-write-up-attacking-common-services-medium-difficulty-bed1e3e0b681" rel="noopener">Attacking Common Services</a></h3>
             <ol class="chain">
-              <li><b>recon</b>Nmap ครบทุกพอร์ต</li>
-              <li><b>enumerate</b>ไล่ดู service ทีละตัว</li>
-              <li><b>exploit</b>brute force ด้วย password list ที่เจอในระบบ</li>
-              <li><b>loot</b>เข้า FTP อ่าน flag</li>
+              <li><b>recon</b><span class="t">Nmap ครบทุกพอร์ต</span><span class="p">สำรวจทุกประตู ไม่ใช่แค่ประตูที่คนใช้บ่อย</span></li>
+              <li><b>enumerate</b><span class="t">ไล่ดู service ทีละตัว</span><span class="p">ดูทีละบริการว่าเปิดให้ทำอะไรได้บ้าง</span></li>
+              <li><b>exploit</b><span class="t">brute force ด้วย password list ที่เจอในระบบ</span><span class="p">เจอรายการรหัสผ่านในระบบ แล้วไล่ลองจนเข้าได้</span></li>
+              <li><b>loot</b><span class="t">เข้า FTP อ่าน flag</span><span class="p">เข้าไปหยิบไฟล์เป้าหมายออกมา</span></li>
             </ol>
             <p class="impact">ผู้ใช้คนเดียวใช้รหัสเดียวกับ 3 service หลุดที่เดียวจึงหลุดทั้งหมด — และถ้าสแกนแค่ 1,000 พอร์ตแรกจะมองไม่เห็น service ที่ซ่อนอยู่เลย</p>
             <footer>
@@ -136,10 +156,10 @@
             </header>
             <h3><a href="https://medium.com/@adu27747g/attacking-common-services-easy-htb-2de9e039f353" rel="noopener">Attacking Common Services</a></h3>
             <ol class="chain">
-              <li><b>recon</b>Nmap</li>
-              <li><b>enumerate</b>หารายชื่อ user</li>
-              <li><b>exploit</b>brute force รหัสผ่าน → FTP</li>
-              <li><b>pivot</b>MariaDB เขียน web shell</li>
+              <li><b>recon</b><span class="t">Nmap</span><span class="p">สำรวจว่าเครื่องเปิดบริการอะไรบ้าง</span></li>
+              <li><b>enumerate</b><span class="t">หารายชื่อ user</span><span class="p">หาว่ามีบัญชีผู้ใช้ชื่ออะไร</span></li>
+              <li><b>exploit</b><span class="t">brute force รหัสผ่าน → FTP</span><span class="p">เดารหัสผ่านจนเข้าบริการรับส่งไฟล์ได้</span></li>
+              <li><b>pivot</b><span class="t">MariaDB เขียน web shell</span><span class="p">ใช้ฐานข้อมูลวางไฟล์คำสั่งไว้ในเว็บ แล้วสั่งงานผ่านหน้าเว็บ</span></li>
             </ol>
             <p class="impact">ฐานข้อมูลที่เขียนไฟล์ลงโฟลเดอร์ของเว็บได้ เท่ากับสั่งรันคำสั่งบนเครื่องได้ — รหัสผ่านอ่อนตัวเดียวจึงกลายเป็นการยึดเว็บทั้งตัว</p>
             <footer>
@@ -319,19 +339,27 @@
           <p>ทุกบรรทัดกดดูหลักฐานได้</p>
         </div>
 
+        <div class="seg seg-filter" role="group" aria-label="กรองเส้นทาง">
+          <button type="button" data-filter="all" aria-pressed="true">ทั้งหมด</button>
+          <button type="button" data-filter="security" aria-pressed="false">Security</button>
+          <button type="button" data-filter="work" aria-pressed="false">Work</button>
+          <button type="button" data-filter="ai" aria-pressed="false">AI · IoT</button>
+          <button type="button" data-filter="other" aria-pressed="false">อื่น ๆ</button>
+        </div>
+
         <div class="years">
           <div class="year">
             <h3>2026</h3>
             <ul>
-              <li class="hot">
+              <li class="hot" data-kind="work">
                 <time>ก.ย. 2026 – เม.ย. 2027</time>
                 <div><strong>Intern (Cooperative Education) · <a href="https://www.armstrongtechs.com/" rel="noopener">Armstrong Techs</a></strong><p>สหกิจศึกษา — กำลังทำอยู่</p></div>
               </li>
-              <li>
+              <li data-kind="security">
                 <time>มิ.ย.</time>
                 <div><strong>NCSA x CISCO CTF 2026</strong><p>NCSA CTF Thailand Tournament ในนามทีม MaiMeName67 <button type="button" data-full="assets/img/certs/ncsa-cisco-ctf-2026.jpg" data-alt="เกียรติบัตร NCSA x CISCO CTF 2026">cert</button></p></div>
               </li>
-              <li>
+              <li data-kind="other">
                 <time>มี.ค. – เม.ย.</time>
                 <div><strong>Cross-cultural Exchange · Ningbo, China</strong><p>Student Training Program ที่ Ningbo City College of Vocational Technology <button type="button" data-full="assets/img/certs/ningbo-exchange-2026.jpg" data-alt="Certificate of Completion จาก Ningbo City College of Vocational Technology">cert</button></p></div>
               </li>
@@ -341,31 +369,31 @@
           <div class="year">
             <h3>2025</h3>
             <ul>
-              <li>
+              <li data-kind="ai">
                 <time>ธ.ค.</time>
                 <div><strong>IEEE paper · ICST 2025</strong><p>ผู้เขียนร่วม “A LoRaWAN-based Landslide Early Warning System using Unsupervised AI” <a href="https://doi.org/10.1109/ICST66402.2025.11512451" rel="noopener">DOI</a></p></div>
               </li>
-              <li>
+              <li data-kind="security">
                 <time>ธ.ค.</time>
                 <div><strong>Road To Cybersecurity 2025 GEN6 · SOSECURE</strong><p>จบหลักสูตร <button type="button" data-full="assets/img/certs/sosecure-road-to-cybersecurity-gen6.jpg" data-alt="Certificate หลักสูตร Road To Cybersecurity 2025 GEN6 จาก SOSECURE">cert</button></p></div>
               </li>
-              <li>
+              <li data-kind="ai">
                 <time>พ.ย.</time>
                 <div><strong>TESA Top Gun Rally 2025</strong><p>หัวข้อ “Defense Innovations” ที่โรงเรียนนายร้อยพระจุลจอมเกล้า <button type="button" data-full="assets/img/certs/tesa-top-gun-rally-2025.jpg" data-alt="เกียรติบัตร TESA Top Gun Rally 2025">cert</button></p></div>
               </li>
-              <li class="hot">
+              <li class="hot" data-kind="security">
                 <time>ก.ค.</time>
                 <div><strong>ชนะเลิศ Mini CTF · NCSA CTF Boot Camp</strong><p>ทีม “กองกำลังแฮกเกอร์” ที่หาดใหญ่ จัดโดย สกมช. <button type="button" data-full="assets/img/certs/mini-ctf-winner-2025.jpg" data-alt="ประกาศนียบัตรรางวัลชนะเลิศ Mini CTF จาก สกมช.">cert</button></p></div>
               </li>
-              <li>
+              <li data-kind="security">
                 <time>พ.ค.</time>
                 <div><strong>Basic Cybersecurity · NCSA MOOC</strong><p>จบหลักสูตร <button type="button" data-full="assets/img/certs/ncsa-basic-cybersecurity.jpg" data-alt="Certificate of Completion หลักสูตร Basic Cybersecurity จาก NCSA MOOC">cert</button></p></div>
               </li>
-              <li>
+              <li data-kind="work">
                 <time>เม.ย. – มิ.ย.</time>
                 <div><strong>Backend Developer Intern · Nightbears Technology</strong><p>ฝึกงาน 2 เดือน <button type="button" data-full="assets/img/certs/nightbears-internship.jpg" data-alt="Certificate of Internship จาก Nightbears Technology">cert</button></p></div>
               </li>
-              <li>
+              <li data-kind="ai">
                 <time>มี.ค.</time>
                 <div><strong>Super AI Engineer Season 5</strong><p>ผ่านระดับ Foundation AI (Theory) <button type="button" data-full="assets/img/certs/super-ai-engineer-ss5.jpg" data-alt="Certificate Super AI Engineer Season 5 ระดับ Foundation AI">cert</button></p></div>
               </li>
@@ -375,11 +403,11 @@
           <div class="year">
             <h3>2024</h3>
             <ul>
-              <li>
+              <li data-kind="ai">
                 <time>พ.ย.</time>
                 <div><strong>TESA Top Gun Rally 2024</strong><p>มหาวิทยาลัยเกษตรศาสตร์ วิทยาเขตศรีราชา <button type="button" data-full="assets/img/certs/tesa-top-gun-rally-2024.jpg" data-alt="Certificate of Attendance TESA Top Gun Rally 2024">cert</button></p></div>
               </li>
-              <li>
+              <li data-kind="other">
                 <time>พ.ค.</time>
                 <div><strong>ค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31</strong><p>ภาคปฏิบัติที่ภูเก็ต <a href="https://cas.wu.ac.th/archives/27200" rel="noopener">ข่าว</a> <button type="button" data-full="assets/img/certs/marine-ecology-31.jpg" data-alt="วุฒิบัตรโครงการค่ายนิเวศวิทยาทางทะเล ครั้งที่ 31">cert</button></p></div>
               </li>
@@ -403,7 +431,13 @@
           </button>
         </div>
 
-        <h3 class="sub">Certificates <small>เลื่อนดูได้ · กดเพื่อขยาย</small></h3>
+        <div class="sub sub-row">
+          <h3>Certificates <small>กดเพื่อขยาย</small></h3>
+          <div class="rail-nav">
+            <button type="button" data-rail="-1" aria-label="เลื่อนไปก่อนหน้า">←</button>
+            <button type="button" data-rail="1" aria-label="เลื่อนไปถัดไป">→</button>
+          </div>
+        </div>
         <div class="rail" tabindex="0" aria-label="Certificates">
           <button class="cert cert-win" type="button" data-full="assets/img/certs/mini-ctf-winner-2025.jpg" data-alt="ประกาศนียบัตรรางวัลชนะเลิศ Mini CTF จาก สกมช.">
             <img src="assets/img/thumbs/certs/mini-ctf-winner-2025.jpg" alt="ประกาศนียบัตรรางวัลชนะเลิศ Mini CTF" loading="lazy" width="760" height="532">
@@ -477,7 +511,11 @@
   <dialog class="lightbox" aria-label="Image preview">
     <div class="lightbox-bar">
       <span class="lightbox-name"></span>
-      <button class="lightbox-close" type="button">close</button>
+      <span class="lightbox-ctl">
+        <button class="lightbox-prev" type="button" aria-label="รูปก่อนหน้า">←</button>
+        <button class="lightbox-next" type="button" aria-label="รูปถัดไป">→</button>
+        <button class="lightbox-close" type="button">close</button>
+      </span>
     </div>
     <img src="" alt="">
   </dialog>
