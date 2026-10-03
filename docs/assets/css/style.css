@@ -1869,3 +1869,7 @@ details .brief dd {
     padding: 6px 13px;
   }
 }
+
+.proj:hover .art-paper img {
+  transform: none;
+}
