@@ -182,7 +182,7 @@
               <dl class="brief">
                 <dt>problem</dt><dd>พื้นที่เสี่ยงดินถล่มอยู่ห่างไกล ช่วงมรสุมอินเทอร์เน็ตล่มและไฟดับ และไม่มีข้อมูลเหตุการณ์จริงมากพอจะสอนโมเดลแบบมีป้ายกำกับ</dd>
                 <dt>approach</dt><dd>โหนดเซ็นเซอร์พลังงานแสงอาทิตย์ส่งข้อมูลผ่าน LoRaWAN มี SD card สำรอง แล้วใช้ Isolation Forest ซึ่งไม่ต้องใช้ป้ายกำกับจับความผิดปกติ</dd>
-                <dt>role</dt><dd>ผู้เขียนร่วม — งานเตรียมข้อมูลและโมเดลตรวจจับความผิดปกติ</dd>
+                <dt>role</dt><dd>ผู้เขียนร่วม — เขียนโมเดล AI ตรวจจับความผิดปกติ</dd>
                 <dt class="signal">result</dt><dd>จับเหตุการณ์วิกฤตได้ F1 0.73 ตีพิมพ์ใน IEEE ICST 2025 และใช้กับพื้นที่ อ.สิชล จ.นครศรีธรรมราช</dd>
               </dl>
               <p class="pipeline">sensor node <i>→</i> LoRaWAN <i>→</i> cloud <i>→</i> Isolation Forest <i>→</i> alert</p>
@@ -208,6 +208,7 @@
               <dl class="brief">
                 <dt>problem</dt><dd>โจทย์ “Defense Innovations”: ต้องรู้ว่าโดรนอยู่ตรงไหนและสูงเท่าไรจากภาพกล้อง แบบ real-time</dd>
                 <dt>approach</dt><dd>YOLO หาโดรนในภาพ, ByteTrack ติดตาม, EfficientNet-B0 ทำนาย lat / lon / alt แล้วส่งผ่าน WebSocket ขึ้น dashboard แผนที่</dd>
+                <dt>role</dt><dd>หัวหน้าทีม — คุมทีม 5 คน และรับผิดชอบงาน AI</dd>
                 <dt class="signal">result</dt><dd>ได้ระบบที่ต่อกันครบ 5 ส่วน: AI pipeline, backend API, dashboard, MATLAB simulation และ MQTT bridge</dd>
               </dl>
               <p class="pipeline">camera <i>→</i> YOLO <i>→</i> ByteTrack <i>→</i> lat / lon / alt <i>→</i> dashboard</p>
@@ -233,6 +234,7 @@
               <dl class="brief">
                 <dt>problem</dt><dd>โรคใบทุเรียนหลายชนิดดูคล้ายกันจนแยกด้วยตาได้ยาก</dd>
                 <dt>approach</dt><dd>transfer learning เทียบ 5 สถาปัตยกรรม รวมผลแบบ ensemble และใช้ Grad-CAM ให้เห็นว่าโมเดลดูตรงไหนของใบ</dd>
+                <dt>role</dt><dd>ทำทั้งระบบคนเดียว ตั้งแต่โมเดลจนถึงแอป</dd>
                 <dt class="signal">result</dt><dd>แม่นยำ 97.7% บนภาพทดสอบ 612 ภาพ และต่อยอดเป็นแอป RooJai Durian สำหรับชาวสวน</dd>
               </dl>
               <p class="pipeline">leaf photo <i>→</i> 5 CNNs <i>→</i> ensemble <i>→</i> disease + Grad-CAM</p>
@@ -257,6 +259,7 @@
               <dl class="brief">
                 <dt>problem</dt><dd>จำแนกสัญญาณเสียงแบบ real-time บนอุปกรณ์ embedded แล้วรายงานผลผ่านเครือข่าย</dd>
                 <dt>approach</dt><dd>โปรแกรม C แบบ multi-thread แยกงานจับเสียง, FFT + KNN และ MQTT ออกจากกันด้วย pthreads</dd>
+                <dt>role</dt><dd>ฝ่าย embedded — เขียนโค้ดทั้งหมดใน repo นี้</dd>
                 <dt class="signal">result</dt><dd>ระบบทำงานครบวงจรตั้งแต่ไมโครโฟนถึง MQTT พร้อมเก็บผลลง SQLite</dd>
               </dl>
               <p class="pipeline">microphone <i>→</i> ALSA <i>→</i> FFT <i>→</i> KNN <i>→</i> SQLite + MQTT</p>
